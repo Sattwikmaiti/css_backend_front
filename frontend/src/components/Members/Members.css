@@ -1,0 +1,17 @@
+ .att img
+{
+    clip-path: circle(50%);
+    transition: transform .7s;
+    width:100px;
+    height:110px;
+}
+.row img:hover{
+    transform: scale(1.2);
+}
+.box 
+{   
+   
+    background-color: rgba(168, 138, 177, 0.313);
+    opacity: 1;
+   
+}
