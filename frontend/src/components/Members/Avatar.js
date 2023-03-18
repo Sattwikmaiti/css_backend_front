@@ -9,16 +9,16 @@ const Avatar = (props) => {
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header" style={{backgroundColor:'black'}}>
-        <h5 class="modal-title" id="exampleModalLabel" >Senior Coordinator</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style={{color:'white'}}>
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="modal-header" style={{backgroundColor:'#E1EFF0'}}>
+        <h5 class="modal-title" id="exampleModalLabel"  style={{color:'black' ,padding:'10px',fontFamily: 'fangsong'}}>Senior Coordinator</h5>
+        <div type="button" class="close" data-dismiss="modal" aria-label="Close" style={{color:'black'}}>
+          X
+        </div>
       </div>
-      <div class="modal-body" style={{backgroundColor:'grey'}}>
+      <div class="modal-body" >
         
-      <h1 style={{color:'black'}}>{props.name}</h1>
-      <h2 style={{color:'white',opacity:'0.6'}}>"{props.motto}"</h2>
+      <h1 style={{color:'black' ,padding:'10px',fontFamily: 'fangsong'}}>{props.name}</h1>
+      <h2 style={{color:'grey',opacity:'0.6'}}>"{props.motto}"</h2>
         
         
          <div className="contact"  style={{fontSize:'40px',paddingLeft:'50px'}}>
