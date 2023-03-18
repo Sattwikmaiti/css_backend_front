@@ -2,8 +2,12 @@ import React from 'react'
 import {useNavigate}  from 'react-router-dom'
 import {useState} from 'react'
 import './Navbar.css'
-import logo from "./logo.png"
+import logo from "./pogo.jpeg"
 const Navbar = () => {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
     const navigate=useNavigate();
     const [isSignUp, setSignUp] = useState("");
     window.onscroll = function() {myFunction()};
@@ -23,13 +27,16 @@ const Navbar = () => {
         setSignUp('')
     });
   return (
-    <div>
+    <div style={{paddingBottom:'90px'}}>
+    
+     <div className="first">
+       <nav className="f">
+          <div className="tog">
+  <span onClick={()=>navigate('/Home')}><img src={logo} style={{height:'60px',width:'60px',borderRadius:'60px',border:'2px solid violet'}} /> <h style={{color:'black',marginLeft:'20px',fontWeight:'bold'}}>
+  &nbsp; Computer  &nbsp; Science  &nbsp; Society
+    
+    </h></span>
   
-       <nav className={`${isSignUp}`}>
-  <span onClick={()=>navigate('/Home')}><img src={logo} style={{height:'80px',width:'100px'}} /></span>
-
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
   </div>
   <div className="1">
   <ul className="nav">
@@ -40,9 +47,15 @@ const Navbar = () => {
     <li onClick={()=>navigate('/Faculty')}>Faculty</li>
     <li onClick={()=>navigate('/Favourite')}>Fav-Point</li>
   </ul>
+ 
   </div>
+ 
+  
 </nav>
-
+</div>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
     </div>
   )
 }

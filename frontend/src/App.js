@@ -31,6 +31,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        path: "/",
+        element: <Home />,
+      },
+      {
         path: "/Home",
         element: <Home />,
       },
@@ -55,17 +59,16 @@ const router = createBrowserRouter([
         path: "/Events",
         element: <Events />,
       },
-      {
-        path:"/",
-        element:<Login />,
-      }
+    
     ],
 
 
    
   },
 ]);
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 const App = () => {
   return (
   <div>

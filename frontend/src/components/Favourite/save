@@ -1,0 +1,67 @@
+ <center><h1 style={{color:'white',padding:'10px'}}> Gallery and Comments </h1> </center>
+  
+
+    <div className="todos">
+
+      {todos.length > 0 ? (
+        todos.map((todo) => (
+          
+          <div
+            className={"todo" + (todo.complete ? " is-complete" : "")}
+            key={todo._id}
+            //onClick={() => completeTodo(todo._id)}
+          >
+              <center >
+              <div className="author" style={{padding:'7px', overflowWrap: 'break-word',display:'center',fontSize:'20px'}}>{todo.author}</div></center>
+              <br/>
+              <br/>
+              <div style={{padding:'10px'}}></div>
+            <div className="text" style={{height:'auto',width:'800px', overflowWrap: 'break-word',padding:'10px'}}>{todo.text}</div>
+             
+            <div className="timestamp" style={{padding:'15px'}}>
+    {new Date( parseInt(todo.timestamp)).toLocaleString() }
+    </div>
+           {/**  <div className="delete-todo" onClick={() => deleteTodo(todo._id)}>
+           <Trash style={{fontSize:'40px'}}/>
+            </div>*/}
+          </div>
+        ))
+      ) : (
+        <p>No Comments</p>
+      )}
+    </div>
+
+    <div className="addPopup" onClick={() => setPopupActive(true)}>
+     <ChatLeftDots className="io" />
+    </div>
+
+    {popupActive ? (
+      <div className="popup">
+        
+        <div className="closePopup" onClick={() => setPopupActive(false)}>
+          <X style={{backgroundColor:'grey'}}/>
+        </div>
+        <div className="content">
+          <h3>Comment </h3>
+          
+          
+          <div style={{padding:'10px'}}></div>
+          <input
+            type="text"
+            className="add-todo-input"
+            onChange={(e) => setNewTodo(e.target.value)}
+            value={newTodo}
+            placeholder="Comment..."
+            
+          />
+      { newTodo===""  ? "":
+          <div className="button" style={{padding:'10px',margin:'10px'}}onClick={addTodo}>
+           Post Comment 
+           
+          </div>
+}
+        </div>
+      </div>
+    ) : (
+      ""
+    )}

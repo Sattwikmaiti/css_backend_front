@@ -1,17 +1,23 @@
  .att img
 {
-    clip-path: circle(50%);
+    border-radius:60px;
     transition: transform .7s;
-    width:100px;
-    height:110px;
+    width:120px;
+    height:120px;
+    border:3px solid blueviolet
+
 }
 .row img:hover{
     transform: scale(1.2);
+    border:7px solid rgba(168, 138, 177, 0.313)
+
 }
 .box 
 {   
    
     background-color: rgba(168, 138, 177, 0.313);
-    opacity: 1;
+  
    
 }
+
+

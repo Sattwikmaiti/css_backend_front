@@ -1,0 +1,129 @@
+
+@import "https://unpkg.com/open-props";
+
+body{
+  background-color: #5b5f97;
+
+}
+
+:root {
+    color-scheme: light dark;
+  }
+  
+.box button {
+ 
+  color: grey;
+  background: black;
+  border: 2px solid black;
+  width:200px;
+  border-radius:10px;
+  padding: 20px;
+ top:20px;
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position: relative;
+}
+
+.box button:hover {
+  --y: -10;
+  --scale: 1.1;
+
+}
+
+
+  .description
+  {
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+#login-container {
+  height: 420px;
+  width: 460px;
+  padding: 30px;
+  border-radius: 5px;
+  background: black;
+  position: relative;
+  
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  background-image: url("./abc.jpg");
+}
+  .profile-img img {
+    height: 100px;
+    width: 100px;
+    
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+    padding:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+ .name
+
+ {
+    background-image: url("./abc.jpg");
+ }
+  .description{
+    margin-bottom: 20px;
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+    font-size:larger;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding:0 0 40px;
+ 
+    
+    color:#2F4F4F
+  }
+
+ a{
+    color: #FFFFFF;
+    text-decoration: none;
+
+  }
+  .social .icon:hover{
+    color:aliceblue;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transform: translateY(4px);
+    transition: all 200ms ease-in-out;
+  }
+ 
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+  
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+ 
+}
+
+
+
+
+.box{
+
+    padding:30px
+}
+
+.col{
+
+    padding:30px
+}

@@ -1,99 +1,157 @@
 import React from 'react'
-import './Alumini.scss'
+
+import './Alumini.css'
 import p1 from '../images/himanshu.jfif'
 import p2 from '../images/anurag.jfif'
 import p3 from '../images/abhishek.jfif'
 import p4 from '../images/ks.jfif'
+import logo from "./logo.gif"
+import GoogleIcon from '@mui/icons-material/Google';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Alumini = () => {
   
 
 
   return (
-
-    <div>
-      <center><h1>Our Alumini...</h1> </center>
-     
-<div class="timeline"> 
-  <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-    <div class="timeline__event__icon ">
-      <i class="lni-cake"></i>
-
-    </div>
-    <div class="timeline__event__date">
-    <img src={p1} style={{height:'190px' ,width:'190px'}}/>
-    </div>
-    <div class="timeline__event__content ">
-      <div class="timeline__event__title">
-      <h1>
-          HIMANSHU KHAITAN
-        </h1>
-      </div>
-      <div class="timeline__event__description">
-       
-        <p>
-An entrepreneur, A Social Media Manager, A Web Developer, A Graphic Designer, A UI/UX Beginner, and above all a Student 📚 trying to make it through. Hunger stands to be my powerhouse.</p>
-      </div>
-    </div>
-  </div>
-  <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-    <div class="timeline__event__icon">
-      <i class="lni-burger"></i>
-
-    </div>
-    <div class="timeline__event__date">
-      <img src={p2} style={{height:'190px' ,width:'190px'}}/>
-      
-    </div>
-    <div class="timeline__event__content">
-      <div class="timeline__event__title">
-        <h1>ANURAG SHARMA</h1>
-      </div>
-      <div class="timeline__event__description">
-        <p>Currently pursuing my B.tech in Computer Science and Engineering from NIT Durgapur.
-Interested in development.</p>
-      </div>
-    </div>
-  </div>
-  <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-    <div class="timeline__event__icon">
-      <i class="lni-slim"></i>
-
-    </div>
-    <div class="timeline__event__date">
-       <img src={p3} style={{height:'190px' ,width:'190px'}}/>
-    </div>
-    <div class="timeline__event__content">
-      <div class="timeline__event__title">
-        <h1>ABHISHEK BASU</h1>
-      </div>
-      <div class="timeline__event__description">
-        <p>Trying to balance my time between pushing the limits of computer vision and optimizing solutions for complex programming problems.</p>
-      </div>
-
-    </div>
-  </div>
- 
   
-  <div class="timeline__event animated fadeInUp timeline__event--type1">
-    <div class="timeline__event__icon">
-      <i class="lni-cake"></i>
-
-    </div>
-    <div class="timeline__event__date">
-       <img src={p4} style={{height:'190px' ,width:'190px'}}/>
-    </div>
-    <div class="timeline__event__content">
-      <div class="timeline__event__title">
-        <h1>Kshitij Shrivastava </h1>
-      </div>
-      <div class="timeline__event__description">
-        <p>I am pursuing BTech CSE (Third Year) from NIT Durgapur, interested in machine learning, iOS app development and competitive programming. I am a passionate learner, seeking software development roles.</p>
-      </div>
-    </div>
+    <div className="containerr">
+      <center><h1>Our Alumini...</h1> </center>
+      <div className="box">
+   <div className="row">
+   <div className="col">
+      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+  <div class="profile-img"  >
+    <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
+
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+   Himanshu Khaitan
+  </div>
+  </center>
+  <div class="description" style={{color:'white',fontSize:'medium',padding:'10px',fontWeight:'bold',backgroundColor:'rgba(0,0,0,0.5)'}}>
+   
+  Attaining global recognition in the area of Computer Science & Engineering through creating, applying and imparting scientific and technical education, research and training to meet the growing needs of the industry and society.</div>
+  
+  <div class="social">
+    <a><GitHubIcon className="icon" style={{
+    fontSize:'40px'}}/></a>
+    <a><TwitterIcon  className="icon"style={{
+    
+    fontSize:'40px'}}/></a>
+    <a><LinkedInIcon  className="icon" style={{
+    
+    fontSize:'40px'}}/></a>
+  </div>
+
+
+  <button ><a style={{textDecoration:'none'}}href="mailto:himanshuKhaitan@gmail.com">EMAIL</a>  </button>
+  
+  
+</div>
+</div>
+     <div className="col">
+      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+  <div class="profile-img"  >
+    <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
+  </div>
+
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+   Himanshu Khaitan
+  </div>
+  </center>
+  <div class="description" style={{fontSize:'medium',padding:'10px',fontWeight:'bold',}}>
+   Attaining global recognition in the area of Computer Science & Engineering through creating, applying and imparting scientific and technical education, research and training to meet the growing needs of the industry and society.
+  </div>
+  
+  <div class="social">
+    <a><GitHubIcon className="icon" style={{
+    fontSize:'40px'}}/></a>
+    <a><TwitterIcon  className="icon"style={{
+    
+    fontSize:'40px'}}/></a>
+    <a><LinkedInIcon  className="icon" style={{
+    
+    fontSize:'40px'}}/></a>
+  </div>
+
+
+  <button ><a  style={{textDecoration:'none'}}href="mailto:himanshuKhaitan@gmail.com">EMAIL</a>  </button>
+  
+  
+</div>
+</div>
+<div className="col">
+      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+  <div class="profile-img"  >
+    <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
+  </div>
+
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+   Himanshu Khaitan
+  </div>
+  </center>
+  <div class="description" style={{fontSize:'medium',padding:'10px',fontWeight:'bold',}}>
+   Attaining global recognition in the area of Computer Science & Engineering through creating, applying and imparting scientific and technical education, research and training to meet the growing needs of the industry and society.
+  </div>
+  
+  <div class="social">
+    <a><GitHubIcon className="icon" style={{
+    fontSize:'40px'}}/></a>
+    <a><TwitterIcon  className="icon"style={{
+    
+    fontSize:'40px'}}/></a>
+    <a><LinkedInIcon  className="icon" style={{
+    
+    fontSize:'40px'}}/></a>
+  </div>
+
+
+  <button ><a style={{textDecoration:'none'}}href="mailto:himanshuKhaitan@gmail.com">EMAIL</a>  </button>
+  
+  
+</div>
+</div>
+<div className="col">
+      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+  <div class="profile-img"  >
+    <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
+  </div>
+
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+   Himanshu Khaitan
+  </div>
+  </center>
+  <div class="description" style={{fontSize:'medium',padding:'10px',fontWeight:'bold',}}>
+   Attaining global recognition in the area of Computer Science & Engineering through creating, applying and imparting scientific and technical education, research and training to meet the growing needs of the industry and society.
+  </div>
+  
+  <div class="social">
+    <a><GitHubIcon className="icon" style={{
+    fontSize:'40px'}}/></a>
+    <a><TwitterIcon  className="icon"style={{
+    
+    fontSize:'40px'}}/></a>
+    <a><LinkedInIcon  className="icon" style={{
+    
+    fontSize:'40px'}}/></a>
+  </div>
+
+
+  <button ><a style={{textDecoration:'none'}}href="mailto:himanshuKhaitan@gmail.com">EMAIL</a>  </button>
+  
+  
+</div>
+</div>
+</div>
 
 </div>
+
+    
     </div>
+    
   )
 }
 

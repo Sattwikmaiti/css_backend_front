@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.css";
-
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import CountUp from 'react-countup';
+import { TypeAnimation } from 'react-type-animation';
+import sub from "./pogo.jpeg"
+import { useNavigate,} from "react-router-dom";
+import { useState ,useEffect} from "react";
 import p1 from "../images/p2.png";
 import p2 from "../images/p1.png";
 import p3 from "../images/p3.png";
@@ -15,8 +17,55 @@ import pp1 from "../images/1.png"
 import pp2 from "../images/2.png"
 import pp3 from "../images/3.png"
 import p from "./1.png";
-const Home = () => {
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+import { Grid } from "@mui/material";
+
+const Home = () => { const [count, setCount] = useState(0);
+  const [start, setStart] = useState(0);
+  const [end, setEnd] = useState(10);
+  const [duration, setDuration] = useState(2);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCount(end);
+      setStart(end);
+      setEnd(start);
+    }, duration * 1000 + 100); // add 100ms delay to prevent flicker
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [start, end, duration]);
+  
   function reveal() {
+    
+  function lol (){
+   
+    let count = document.querySelectorAll(".counter");
+  
+   
+    count.forEach((val)=>
+    {
+    
+      let str=0;
+      let end=parseInt(val.getAttribute("data-val"));
+    
+     
+      
+      let counter=setInterval(function(){
+        str+=1;
+        val.textContent=str;
+        if(str===end)
+        {
+          clearInterval(counter);
+          
+          
+        }
+      },400)
+    })
+  }
+  lol()
     var reveals = document.querySelectorAll(".reveal");
   
     for (var i = 0; i < reveals.length; i++) {
@@ -31,19 +80,26 @@ const Home = () => {
       }
     }
   }
+ 
   
   window.addEventListener("scroll", reveal);
+ 
+
+  
+  
+
   
   return (
     <> 
-      <div className="imageslider container ">
+      <div className="imageslider  ">
         
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-ride="carousel"
           data-wrap="true"
-          data-interval="2000"
+          data-interval="1000"
+
         >
           <ol class="carousel-indicators">
             <li
@@ -90,157 +146,132 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" reveal motto ">
+      <div className=" reveal motto " style={{height:'200px'}}>
         <h2>OUR MOTTO</h2>
         <p style={{ fontSize: "30px" }}>
-          TOGETHER WE ARE THE CSS FAMILY. WE STAND ALL UNITED .
+        <TypeAnimation
+    // Same String at the start will only be typed once, initially
+    sequence={[
+    'Sometimes it is the people no one can  imagine anything of who do the things no one can imagine',
+    1000,
+   
+    ]}
+    speed={2} // Custom Speed from 1-99 - Default Speed: 40
+    style={{ fontSize: '40px' }}
+    wrapper="span" // Animation will be rendered as a <span>
+    repeat={Infinity} // Repeat this Animation Sequence infinitely
+  />
         </p>
       </div>
 
-
+   <center>
       <div className=" reveal body">
         <h1 className="black-lives-matter"># COMPUTER SCIENCE SOCIETY </h1>
       </div>
-
-<div className=" reveal we">
- <h1 className="pica" style={{padding:'20px' }}>ABOUT US</h1>
-<body>
-	<section>
-		<div class="pica">
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src={pp1}/>
-					</div>
-					<div class="contentBx">
-						MOTTO
-					</div>
-				</div>
-				<ul class="sci">
-					<li>
-						WE WILL DO IT ALL HEARTS TOGETHER.
-					</li>
-				
-				</ul>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-          <img src={pp2}/>
-					</div>
-					<div class="contentBx">
-					MISSION
-					</div>
-				</div>
-				<ul class="sci">
-          <li>
-          TOGETHER WE BUILD IT .
-          </li>
-					
-				</ul>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-          <img src={pp3}/>
-					</div>
-					<div class="contentBx">
-					VALUE
-					</div>
-				</div>
-				<ul class="sci">
-					<li >
-             KEEP CALM .KEEP CSSS
-					</li>
-				
-				</ul>
-			</div>
-		</div>
-	</section>
-</body>
+      </center>
+ <center >
+    <h3 style={{marginTop:'100px',}}>
+      WE 
+    </h3>
+  </center>
+<div className="box" style={{display:'flex',justifyContent:'space-around',flexDirection:'row',padding:'0px',backgroundColor:'black' ,boxShadow:'2px 2px 2px 2px solid white'}}>
+ 
+  <div className="di">
+      <center>
+        <div className="ico " style={{padding:'70px',color:'white'}}>
+            <GitHubIcon className="floating" style={{fontSize:'50px',left:'175px',translateY:'(12px)'}} />
+        </div>
+    
+         <div className="names">
+          EVENTS
+         </div>
+         <CountUp start={start} end={end} duration={duration} useEasing={true} />
+        
+      </center>
+  </div>
+  <div className="di">
+      <center>
+        <div className="ico" style={{padding:'70px',color:'white'}}>
+            <GitHubIcon  className="floating" style={{fontSize:'50px',left:'600px'}} />
+        </div>
+    
+         <div className="names">
+          EVENTS
+         </div>
+         <CountUp start={start} end={end} duration={duration} useEasing={true} />
+        
+      </center>
+  </div>
+  <div className="di">
+      <center>
+        <div className="ico" style={{padding:'70px',color:'white'}}>
+            <GitHubIcon  className="floating"  style={{fontSize:'50px',left:'1020px'}} />
+        </div>
+    
+         <div className="names">
+          EVENTS
+         </div>
+         <h1>
+         <CountUp start={start} end={end} duration={duration} useEasing={true} />
+      </h1>
+        
+      </center>
+  </div>
 </div>
-
-
-      <div className="reveal services part">
+  <div className="space" style={{padding:'100px'}}></div>
+      <div className="container reveal services part" >
         <div
           className="lol"
-          style={{ fontSize: "35px", fontWeight: "bolder", color: "white" }}
+          style={{ fontSize: "55px", fontWeight: "bolder", color: "white" ,}}
         >
           OUR FACULTY ADVISOR
         </div>
-        <div className="cont">
-          <div className="p1" style={{ padding: "20px" }}>
-            <img className="h" src={parag} alt="g" />
-            <svg>
-              <path
-                d="M 87 1 A 86 86 0 1 1 86.9 1"
-                stroke="white"
-                stroke-width="2"
-                fill="none"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="p1" style={{ padding: "20px" }}>
-            <img className="h" src={sajal} alt="g" />
-            <svg>
-              <path
-                d="M 87 1 A 86 86 0 1 1 86.9 1"
-                stroke="white"
-                stroke-width="2"
-                fill="none"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="p1" style={{ padding: "20px" }}>
-            <img className="h" src={subrata} alt="g" />
-            <svg>
-              <path
-                d="M 87 1 A 86 86 0 1 1 86.9 1"
-                stroke="white"
-                stroke-width="2"
-                fill="none"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="p1" style={{ padding: "20px" }}>
-            <img className="h" src={animesh} alt="g" />
-            <svg>
-              <path
-                d="M 87 1 A 86 86 0 1 1 86.9 1"
-                stroke="white"
-                stroke-width="2"
-                fill="none"
-              />
-            </svg>
-          </div>
-        </div>
+        
+<div className="container reveal floating" style={{padding:'0px',marginLeft:'130px'}}> 
+
+
+<div class="grid-container" style={{padding:''}}>
+ 
+ 
+ 
+  
+  <div className="containere " style={{display:'flex',justifyContent:'space-between'}}>  
+  <div className="pic greye" style={{padding:'10px'}}>
+    <img class='grid-item grid-item-6' src={sub} alt=''/>
+    <p>Subrata Nandi</p>
+  </div>
+  <div  className="pic">
+    <img class='grid-item grid-item-7' src={sub} alt=''/>
+    <p>Subrata Nandi</p>
+  </div>
+  </div>
+  <div className="containere" style={{display:'flex',justifyContent:'space-between'}}>
+  <div  className="pic" style={{padding:'10px'}}>
+    <img class='grid-item grid-item-8' src={sub} alt=''/>
+    <p>Subrata Nandi</p>
+  </div>
+  <div  className="pic greye">
+    <img class='grid-item grid-item-9' src={sub} alt=''/>
+    <p>Subrata Nandi</p>
+  </div>
+  </div>
+</div>
+    </div>
+
+    
       </div>
 
-      <div className="reveal hod container" style={{display:'flex',flexDirection:'row'}}>
-        <div className="picture" style={{padding:'30px'}}>
-          <img
-            src={subrata}
-            style={{
-              height: "400px ",
-              width: "30vw",
-              padding: "0px 0px 50px 10px",
-            }}
-
-            class="floating-img" alt="my floating image"
-          />
-        </div>
-        <div className="lecture" >
-          <h1 style={{fontSize:'40px'}}>HOD PERCEPTION </h1>
-          <p style={{padding:'5px' ,fontSize:'17px',fontWeight:'bolder',}}>
-          The CSE Department at NIT Durgapur has a rich legacy of producing successful alumni. To continue this legacy, the department is proud to announce the formation of CSS (CSE Student's Society). This society will provide students with opportunities for networking, skill development, and talent showcase. The society will host regular events involving alumni, industry experts, and notable academicians. Follow this space for updates and exciting opportunities!
-          </p>
-        </div>
+      
+      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'250px',marginBottom:'50px'}}>
+      <div class="blockquote-wrapper">
+  <div class="blockquote">
+    <h1>
+    Sometimes it is the people no one can <span style={{color:'#2F4F4F'}}> imagine anything of</span> who do the things no one can imagine<span style={{color:'#778899'}}>.</span>
+     </h1>
+    <h4> Alan Turing<br/><em>Father of Modern Computers</em></h4>
+    
+  </div>
+</div>
       </div>
 
       <div className="reveal MAP">

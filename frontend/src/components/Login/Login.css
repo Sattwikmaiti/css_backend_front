@@ -1,9 +1,8 @@
-
-.cent
+.cent :hover
 {
-    background-image:url("./CSS.gif");
-    background-position: center;
+    border :8px solid #92a8d1;
+    color:white;
     
-    background-repeat:no-repeat;
-    opacity:0.5
+    background-color: black;
+
 }

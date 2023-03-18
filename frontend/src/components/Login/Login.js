@@ -7,27 +7,42 @@ import {auth,provider}  from "./Config.js"
 import {signInWithPopup} from "firebase/auth"
 import Home from "../Home/Home.js"
 
+import Favourite from '../Favourite/Favourite';
+
 const Login = () => {
   const [value,setValue] = useState('')
   const handleClick =()=>{
    
-      signInWithPopup(auth,provider).then((data)=>{
-          setValue(data.user.email)
-          localStorage.setItem("email",data.user.email)
-      })
+    alert("clicked")
+    signInWithPopup(auth,provider).then(
+      (user)=>{
+          localStorage.setItem("user",JSON.stringify(user))
+          localStorage.setItem("email",user.user.email)
+          setValue(user.user.email)
+         
+       
+      }
+  ).catch((e)=>console.log()) 
+  
+  
+     
   }
 
   useEffect(()=>{
+    
       setValue(localStorage.getItem('email'))
-  })
+    //  console.log(value==='')
+      
+  },[])
   return (
     <div className="d">
-    {value?<Home/>:
+    {value!==''?<Favourite/>:
     <>
     <div>
-    <center  className="cent" style={{padding:'250px'}}>
-       <h1 style={{color:'white'}}>Login In With</h1>
-      <GoogleIcon sx={{fontSize:'100px' ,color:'white'}} onClick={handleClick} />
+    <center  className="cent" style={{padding:'150px',height:'100vh'}}>
+       
+      <GoogleIcon sx={{fontSize:'100px' ,backgroundColor:'white',border:'8px solid grey',borderRadius:'50px'}} onClick={handleClick} className="logo"/>
+      
       </center>
 
   </div>

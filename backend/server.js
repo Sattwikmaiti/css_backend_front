@@ -7,6 +7,7 @@ app.use(cors());
 
 const mongoUrl =
   "mongodb+srv://maitisattwik:Sattwik%402002@cluster0images.k7uxezm.mongodb.net/?retryWrites=true&w=majority";
+  ;
 
 mongoose
   .connect(mongoUrl, {
@@ -96,6 +97,7 @@ app.post("/upload-image", async (req, res) => {
   }
 })
 
+
 app.get("/get-image", async (req, res) => {
   try {
     await Images.find({}).then(data => {
@@ -109,4 +111,4 @@ app.get("/get-image", async (req, res) => {
 
 
 
-app.listen(3005,()=>{console.log("serer started in port 3000")})
+app.listen(3010,()=>{console.log("serer started in port 3000")})
