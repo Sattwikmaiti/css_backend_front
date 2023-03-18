@@ -48,16 +48,26 @@ const Members = () => {
                 <div className="col">
                   <img src={ks}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
-                
+                  <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
+                 
+                  
                    
                 </div>
                 <div className="col">
                   <img src={ishan}  data-toggle="modal" data-target="#exampleModal" />
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
                 <div className="col">
                   <img src={abhishek}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
 
               </div>
@@ -65,15 +75,24 @@ const Members = () => {
                 <div className="col">
                   <img src={ayush}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                    
                 </div>
                 <div className="col">
                   <img src={gulshan}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
                 <div className="col">
                   <img src={harshit}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
 
               </div>
@@ -95,22 +114,34 @@ const Members = () => {
                 <div className="col">
                   <img src={archisman}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">A</span>rchisman <span  className="color">D</span>as
+                  </div>
                 
                    
                 </div>
                 <div className="col">
                   <img src={aditya}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 
                    
                 </div>
                 <div className="col">
                   <img src={anurag}  data-toggle="modal" data-target="#exampleModal" />
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
                 <div className="col">
                   <img src={raju}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
 
               </div>
@@ -118,21 +149,33 @@ const Members = () => {
               <div className="col">
                   <img src={satya}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 
                    
                 </div>
                 <div className="col">
                   <img src={satyam}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                    
                 </div>
                 <div className="col">
                   <img src={shakti}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
                 <div className="col">
                   <img src={shubham}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
 
               </div>
@@ -140,21 +183,33 @@ const Members = () => {
               <div className="col">
                   <img src={sindhu}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 
                    
                 </div>
                 <div className="col">
                   <img src={suddhashil}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                    
                 </div>
                 <div className="col">
                   <img src={nilashis}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
                 <div className="col">
                   <img src={himanshu}  data-toggle="modal" data-target="#exampleModal"/>
                   <Avatar {...ArchismanDas} />
+                 <div className="nam">
+                   <span className="color">K</span>shitz <span  className="color">S</span>rivastava
+                  </div>
                 </div>
 
               </div>

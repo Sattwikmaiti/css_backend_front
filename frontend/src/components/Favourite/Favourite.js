@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GoogleIcon from '@mui/icons-material/Google';
 import p111 from "./p4.jpg"
-import p9 from "./p9.png"
+import p9 from "./p9.jpg"
 import p1 from "./p1.jpg"
 
 import p2 from "./p2.jpg"
@@ -40,11 +40,11 @@ const Favourite = () => {
   const [newAuthor,setAuthor]=useState("")
   const [popupActiveu, setPopupActiveu] = useState(false);
   const [url,setUrl]=useState('')
-  const pic=[p1,p2,p3,p7,p8,p9,p10,p11];
+  const pic=[p1,p2,p3,p7,p8,p9,p10,p11,p1,p2,p3];
   
-  let v=Math.floor(Math.random() * 5);
-  console.log("f",v)
+  const [avatarnum,setAvatarNum]=useState("")
   const [updates,setupdates]=useState("")
+  
 
 
   const update = async(id)=>
@@ -157,13 +157,15 @@ const [loading,setLoading]=useState(true)
       },
       body: JSON.stringify({
         text: newTodo,
-        author:newAuthor
+        author:newAuthor,
+        avatar:pic[avatarnum]
       }),
     }).then((res) => res.json());
 
     setTodos([...todos, data]);
 setupdates('')
 setLoading(false);
+setAvatarNum("")
     setPopupActive(false);
     setNewTodo("");
     
@@ -249,9 +251,13 @@ return (
 <div className="d">
 {value===''||value===null?<>
 <div>
-    <center  className="cent" style={{padding:'150px',height:'100vh',backgroundColor:'rgba(145, 141, 149, 0.488)',opacity:'0.6'}}>
-       
-      <GoogleIcon sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid grey',borderRadius:'50px',color:'orange',right:'600px'}} onClick={handleClick} className="logo"/>
+
+ 
+    <center  className="cent" style={{padding:'100px',height:'100vh',backgroundColor:'#E1EFF0',opacity:'1'}}>
+        
+         
+
+      <GoogleIcon  sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid red',borderRadius:'50px',color:'orange',right:'600px'}} onClick={handleClick} className="logo floating"/>
       
       </center>
 
@@ -355,9 +361,18 @@ return (
               value={newTodo}
               placeholder="Type Your Comment here...."
               style={{fontSize:'larger',fontWeight:'bolder',padding:'10px',width:'80vw'}}
-            />
-                   { newTodo===""  ? "":
-            <div className="button" style={{padding:'10px',margin:'10px' ,backgroundColor:'white',color:'black',width:'50%',marginLeft:'250px'}}onClick={addTodo}>
+            /> 
+            <div className="space" style={{margin:'20px'}}></div>
+            <div className="magic-avatar" >
+            <input    onChange={(e) => {setAvatarNum(e.target.value); }}
+              value={avatarnum}
+            
+            placeholder="A number between 0 to 9 for magic avatar...." type="number" id="quantity" name="quantity" min="0" max="9" style={{fontSize:'larger',fontWeight:'bolder',padding:'10px',width:'30vw',margin:'10px'}}/>
+            </div>
+         
+
+                   { newTodo==="" ||avatarnum===""||avatarnum>9  ? "":
+            <div className="button" style={{padding:'10px',margin:'10px' ,backgroundColor:'white',color:'black',width:'50%',marginLeft:'250px'}}  onClick={addTodo}>
              Post Comment 
              
             </div>
@@ -372,7 +387,7 @@ return (
   {todos.length>0?(todos.map((todo)=>{
   return (
       <div style={{display:'flex',width:'100%',height:'auto ',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
-      <img src={pic[v]} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
+      <img src={todo.avatar} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
         <div style={{paddingLeft:'1rem',width:'100%'}}>
             <div style={{display:'flex',gap:'1rem',marginBottom:'1px',alignItems:''}}>
                 <p style={{fontWeight:'bold',fontSize:"1.2rem",color:"#008B8B"}}>{todo.author}</p>
