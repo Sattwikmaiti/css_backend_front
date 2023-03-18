@@ -30,6 +30,9 @@ timestamp:
  type:String,
  default:new Date().getTime()
 }
+
+,
+
 })
 //exporting the model of todo list
 const Todo =mongoose.model("Todo",Todoschema)

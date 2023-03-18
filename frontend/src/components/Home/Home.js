@@ -91,7 +91,7 @@ const Home = () => { const [count, setCount] = useState(0);
   
   return (
     <> 
-      <div className="imageslider  ">
+      <div className="imageslider container  ">
         
         <div
           id="carouselExampleIndicators"
@@ -218,51 +218,66 @@ const Home = () => { const [count, setCount] = useState(0);
       </center>
   </div>
 </div>
-  <div className="space" style={{padding:'100px'}}></div>
-      <div className="container reveal services part" >
+  
+      <div className="space" style={{padding:'100px'}}></div>
+
+    <div className="container reveal services part" >
         <div
           className="lol"
-          style={{ fontSize: "55px", fontWeight: "bolder", color: "white" ,}}
-        >
-          OUR FACULTY ADVISOR
+          style={{ fontSize: "20px", fontWeight: "bolder", color: "white" , backgroundColor:'black',height:'160px',width:'160px',borderRadius:'20px'}}
+        > 
+        <div style={{display:'flex',justifyContent:'center',top:'20px',margin:'30px',borderRadius:'20px'}}>
+        OUR &nbsp;FACULTY &nbsp; ADVISOR
+        </div>
+         
         </div>
         
-<div className="container reveal floating" style={{padding:'0px',marginLeft:'130px'}}> 
+<div className="container reveal floating" style={{padding:'0px',marginLeft:'130px',height:'600px',width:'500px'}}> 
 
+    <div className="grid-1" style={{display:'flex',flexDirection:'row',padding:'10px'}}>
 
-<div class="grid-container" style={{padding:''}}>
- 
- 
- 
-  
-  <div className="containere " style={{display:'flex',justifyContent:'space-between'}}>  
-  <div className="pic greye" style={{padding:'10px'}}>
-    <img class='grid-item grid-item-6' src={sub} alt=''/>
-    <p>Subrata Nandi</p>
-  </div>
-  <div  className="pic">
-    <img class='grid-item grid-item-7' src={sub} alt=''/>
-    <p>Subrata Nandi</p>
-  </div>
-  </div>
-  <div className="containere" style={{display:'flex',justifyContent:'space-between'}}>
-  <div  className="pic" style={{padding:'10px'}}>
-    <img class='grid-item grid-item-8' src={sub} alt=''/>
-    <p>Subrata Nandi</p>
-  </div>
-  <div  className="pic greye">
-    <img class='grid-item grid-item-9' src={sub} alt=''/>
-    <p>Subrata Nandi</p>
-  </div>
-  </div>
+      <div className="obj1" style={{margin:'10px'}}>
+      <center>
+  <img src={sub} alt="Avatar" className="image"/>
+  <div className="middle">
+    <div className ="text">Subrata Nandi</div>
+  </div></center>
+      </div>
+      <div className="obj1"  style={{margin:'10px'}}>
+      <center>
+  <img src={sub} alt="Avatar" className="image"/>
+  <div className="middle">
+    <div className ="text">Subrata Nandi</div>
+  </div></center>
+      </div>
+    </div>
+    <div className="grid-1" style={{display:'flex',flexDirection:'row',}}>
+
+<div className="obj1"  >
+<center>
+  <img src={sub} alt="Avatar" className="image"/>
+  <div className="middle">
+    <div className ="text">Subrata Nandi</div>
+  </div></center>
 </div>
+<div className="obj1">
+<center>
+  <img src={sub} alt="Avatar" className="image" />
+  <div className="middle">
+    <div className ="text">Subrata Nandi</div>
+  </div></center>
+</div>
+</div>
+ 
+ 
+ 
     </div>
 
     
-      </div>
 
-      
-      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'250px',marginBottom:'50px'}}>
+    
+      </div>  
+      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'400px',marginBottom:'50px'}}>
       <div class="blockquote-wrapper">
   <div class="blockquote">
     <h1>

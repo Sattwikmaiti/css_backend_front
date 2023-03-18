@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -8,6 +10,8 @@ app.use(cors());
 const mongoUrl =
   "mongodb+srv://maitisattwik:Sattwik%402002@cluster0images.k7uxezm.mongodb.net/?retryWrites=true&w=majority";
   ;
+
+  
 
 mongoose
   .connect(mongoUrl, {
@@ -43,7 +47,8 @@ app.post('/todo/new', (req, res) => {
 	const todo = new Todo({
 		text: req.body.text,
 		timestamp:req.body.timestamp,
-		author:req.body.author
+		author:req.body.author,
+    
 	})
 
 	todo.save();
