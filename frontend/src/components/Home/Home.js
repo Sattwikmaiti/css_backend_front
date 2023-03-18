@@ -154,9 +154,10 @@ const Home = () => { const [count, setCount] = useState(0);
     sequence={[
     'Sometimes it is the people no one can  imagine anything of who do the things no one can imagine',
     1000,
+  
    
     ]}
-    speed={2} // Custom Speed from 1-99 - Default Speed: 40
+    speed={1} // Custom Speed from 1-99 - Default Speed: 40
     style={{ fontSize: '40px' }}
     wrapper="span" // Animation will be rendered as a <span>
     repeat={Infinity} // Repeat this Animation Sequence infinitely

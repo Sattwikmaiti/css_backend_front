@@ -48,6 +48,7 @@ app.post('/todo/new', (req, res) => {
 		text: req.body.text,
 		timestamp:req.body.timestamp,
 		author:req.body.author,
+    avatar:req.body.avatar
     
 	})
 

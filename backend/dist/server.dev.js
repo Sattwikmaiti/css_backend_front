@@ -61,7 +61,8 @@ app.post('/todo/new', function (req, res) {
   var todo = new Todo({
     text: req.body.text,
     timestamp: req.body.timestamp,
-    author: req.body.author
+    author: req.body.author,
+    avatar: req.body.avatar
   });
   todo.save();
   res.json(todo);
