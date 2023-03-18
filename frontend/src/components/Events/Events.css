@@ -6,13 +6,13 @@
   width:400px;
  
   transition:1000ms all ease ;
-  background-color: rgba(50, 91, 187, 0.251);
+
    border-radius: 10px;
 
 }
 
 .content{
-  background-color: rgba(26, 22, 17, 0.558);
+  background-color:  rgba(50, 91, 187, 0.251);
   border-radius:10px;
   padding:10px
 }
