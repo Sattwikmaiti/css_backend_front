@@ -25,7 +25,7 @@ body {
 }
 .blockquote-wrapper {
   display: flex;
-  margin:10px;
+  margin-left:20em;
   height: 100px;
   padding: 0 20px;
 }
@@ -35,22 +35,22 @@ body {
   opacity: 1;
   -webkit-transform: scale(1.2);
 
-  
+
   height:100px;
-width:200px; 
+width:200px;
   transition: .5s ease;
   backface-visibility: hidden;
 
-  
-  
+
+
 }
 
 .middle {
   transition: .5s ease;
   opacity: 0;
-  
+
 width:220px;
- 
+
   transform: translate(-1%, -30%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -74,7 +74,7 @@ width:220px;
 
   -webkit-transform: scale(1.1);
   border:1px solid white
-     
+
 }
 
 .obj1 img:hover .middle {
@@ -91,17 +91,17 @@ width:220px;
   color: whitesmoke;
   font-size: 20px;
   padding: 2px;
-  
+
   border-radius:10px
-  
-  
-}  
+
+
+}
 
 .obj1{
   padding:20px
 }
 .containerimg {
-  
+
   width: 100%;
 }
 
@@ -154,7 +154,7 @@ body {
    left: 60px;
    border-bottom: none;
    border-left: none;
-   z-index: 3; 
+   z-index: 3;
 }
 
 .blockquote h1:before {
@@ -188,7 +188,7 @@ body {
    padding-top: 19px;
    z-index: 1;
    margin-left:150px;
-   
+
    padding-left:12px;
 }
 
@@ -205,46 +205,46 @@ body {
   display:center;
 
   font-size:30px
-  
+
 }
 
 
 .di{
 
   box-shadow: 5px 5px 5px 5px rgba(145, 141, 149, 0.488);
-  
-  
- 
+
+
+
 }
 
  .ico{
   background-color: hsla(255, 29%, 87%, 0.693);
-  
+
 }
 
 .names{
   color:#a7aeb5;
   margin:10px;
 
-  
+
 }
 
  .names{
   border-bottom:2px solid #a7aeb5;
   border-top:2px solid #a7aeb5;
 }
-.floating { 
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  
+
 }
 
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+  100%   { transform: translate(0, -0px); }
 }
 
 
@@ -266,13 +266,13 @@ body {
     transition: all .25s ease-in-out;}
   100%   { transform: translate(0, -0px);  filter: grayscale(50%);
     border-radius: 5px;
-    transition: all .25s ease-in-out; }   
+    transition: all .25s ease-in-out; }
 }
 
 .containere img{
 height:200px;
 width:250px
-} 
+}
 .grid-container {
   columns: 5 200px;
   column-gap: 1.5rem;
@@ -297,7 +297,7 @@ width:250px
       border-color: coral;
     }
     .grid-container img {
-      
+
       filter: grayscale(50%);
       border-radius: 5px;
       transition: all .25s ease-in-out;
@@ -308,7 +308,7 @@ width:250px
       text-align: center;
       font-style: italic;
     }
-  
+
 
 
 
@@ -342,7 +342,7 @@ width:250px
 .c1{
 
   margin:10px;
-  
+
 }
 
 .grid{
@@ -370,13 +370,13 @@ width:250px
 .col {
   flex-basis: 0;
   flex-grow: 1;
- 
+
   align-items: center;
   text-align: center;
 }
 
 
- 
+
 footer {
   background: whitesmoke;
   color: white;
@@ -424,13 +424,13 @@ span {
   padding: 0;
 }
 
-.part 
+.part
 {
    background-color: rgba(245, 223, 223, 0.184);
    opacity: 0.6;
    backdrop-filter: blur(40px);
    border-radius:20px
-  
+
 }
 
 .nav li {
@@ -466,7 +466,7 @@ img.prdts
   height:300px;
   width:230px;
   transform: rotateZ(30deg);
-   
+
   transition: all ease 1s;
   margin:5px white
 }
@@ -474,7 +474,7 @@ img.prdts:hover
 {
   height:330px;
   width:250px;
- 
+
   transform: skewX(180deg);
   box-shadow: 0px 0px 10px 10px rgba(152, 124, 183, 0.7);
 }
@@ -489,7 +489,7 @@ img.prdts:hover
 
 .featured {
   background-color: antiquewhite;
-  
+
 }
 
 
@@ -500,29 +500,29 @@ img.prdts:hover
   justify-content:  center;
   align-items: center;
   overflow-x:visible ;
-  
-   
+
+
 }
 .iw
 {
   padding:30px;
   width :500px
-   
+
 }
 
 .fp:hover{
 
   box-shadow: 10px 10px 20px 20px rgba(84, 106, 170, 0.2);
-  
+
 }
 
 
 img.h {
   position: absolute;
-  
+
   width: 150px;
   border-radius: 100%;
-  
+
   padding :20px 10px 20px 10px
 
 }
@@ -532,18 +532,18 @@ img.h {
 svg {
 
   position: absolute;
-  
+
   width: 174px;
   height: 274px;
-  
+
 }
 path {
   stroke-dasharray: 40;
   stroke-dashoffset: 40;
   animation: dash 1s linear forwards;
-  
+
   animation-iteration-count: infinite;
- 
+
 }
 @keyframes dash {
   to {
@@ -551,7 +551,7 @@ path {
   }
 }
 
-.part 
+.part
 {
   display: flex;
   justify-content: space-between;
@@ -570,8 +570,8 @@ body {
 
 
 .footer {
-  
-  
+
+
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 300px;
@@ -579,7 +579,7 @@ body {
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
-   
+
     .footer {
       height: 300px;
     }

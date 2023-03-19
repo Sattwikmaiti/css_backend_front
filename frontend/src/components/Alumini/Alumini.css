@@ -1,14 +1,8 @@
 
 @import "https://unpkg.com/open-props";
 
-body{
-  background-color: #5b5f97;
 
-}
 
-:root {
-    color-scheme: light dark;
-  }
   
 .box button {
  
@@ -66,6 +60,12 @@ body{
 
  {
     background-image: url("./abc.jpg");
+ }
+
+ .box .col #login-container{
+
+  box-shadow: 5px 5px 5px 5px #494F55;
+
  }
   .description{
     margin-bottom: 20px;

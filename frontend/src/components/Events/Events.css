@@ -32,3 +32,12 @@
   color:rgb(133, 174, 197);
  
 }
+
+
+@media  screen and (max-width: 768px){
+   .resp{
+    margin-left:20vw;
+    padding-left:20vw
+   }
+  
+}

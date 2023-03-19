@@ -57,9 +57,9 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
   return (
     <>
     
-    <div className="connect"  style={{padding :'10px'}}>
+    <div className="connect"  style={{padding :'10px',width:'100vw'}}>
              
-             <center className="container all" style={{padding:'100px'}}>
+             <center className="containert all" style={{padding:'100px'}}>
 
                <h3 style={{padding:'10px',fontWeight:'bolder'}}>Connect Us</h3>
                
@@ -87,7 +87,7 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
        </div>
 
    <center>
-        <div className="containerr cont" id="gg">
+        <div className="containerr cont" id="gg" style={{width:'100vw'}}>
   <div className="pay">
 Want To Join CSS ? Fill it UP!!
   </div>

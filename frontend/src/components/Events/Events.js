@@ -26,7 +26,7 @@ const Events = () => {
   
   window.addEventListener("scroll", reveal);
   return (
-    <div>
+    <div className="resp">
       <div className="containerrr">
         <div className="top-section">
           <h1>
