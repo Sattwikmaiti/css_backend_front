@@ -139,7 +139,7 @@ const [loading,setLoading]=useState(true)
   };
   const deleteTodo = async (id) => {
     setLoading(true);
-    const data = await fetch( "http://https://css-website-nqu8.onrender.com/todo/delete/" + id, {
+    const data = await fetch( "https://css-website-nqu8.onrender.com/todo/delete/" + id, {
       method: "DELETE",
     }).then((res) => res.json());
     setLoading(false);
