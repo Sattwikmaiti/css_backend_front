@@ -17,12 +17,12 @@ const Alumini = () => {
 
   return (
   
-    <div className="containerr">
+    <div className="containerr" style={{backgroundColor:'black'}}>
       <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'20vw'}}><h1>OUR ALUMINI</h1> </center>
       <div className="box">
    <div className="row">
    <div className="col">
-      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+      <div id="login-container" >
   <div class="profile-img"  >
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
@@ -53,7 +53,7 @@ const Alumini = () => {
 </div>
 </div>
      <div className="col">
-      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+      <div id="login-container" >
   <div class="profile-img"  >
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
@@ -84,7 +84,7 @@ const Alumini = () => {
 </div>
 </div>
 <div className="col">
-      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+      <div id="login-container" >
   <div class="profile-img"  >
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
@@ -115,7 +115,7 @@ const Alumini = () => {
 </div>
 </div>
 <div className="col">
-      <div id="login-container" style={{backgroundColor:'#4682B4',opacity:'0.7'}}>
+      <div id="login-container" >
   <div class="profile-img"  >
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>

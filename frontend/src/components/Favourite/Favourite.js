@@ -254,11 +254,11 @@ return (
 <div  onClick={handleClick}>
 
  
-    <center  className="cent" style={{padding:'40vw',height:'100vh',backgroundColor:'#E1EFF0',opacity:'1'}}>
+    <center  className="cent" style={{backgroundColor:'black',opacity:'1',height:'100vh',width:'100vw'}}>
         
          
 
-      <GoogleIcon  sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid red',borderRadius:'50px',color:'orange',right:'50vw'}} onClick={handleClick} className="logo floating"/>
+      <GoogleIcon  sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid red',borderRadius:'50px',color:'orange',right:'50vw',}} onClick={handleClick} className="logo floating"/>
       
       </center>
 
