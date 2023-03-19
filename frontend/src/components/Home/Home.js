@@ -84,7 +84,7 @@ const Home = () => {
 
   
   return (
-    <> <div className="responsive">
+    <> <div className="responsive" style={{display:'center',paddingLeft:'10em',width:'auto'}}>
       <div className="imageslider container  ">
         
         <div
@@ -272,7 +272,7 @@ const Home = () => {
 
     
       </div>  
-      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'400px',marginBottom:'50px',fontFamily: 'Lora, serif'}}>
+      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'auto',marginTop:'400px',marginBottom:'50px',fontFamily: 'Lora, serif',marginLeft:'auto'}}>
       <div class="blockquote-wrapper">
   <div class="blockquote">
     <h1 style={{fontFamily: 'Lora, serif'}}>
