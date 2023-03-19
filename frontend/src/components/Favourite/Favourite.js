@@ -29,7 +29,7 @@ import Login from '../Login/Login.js';
 import { ChatFill, ChatLeftDots} from 'bootstrap-icons-react';
 
 import { } from 'bootstrap-icons-react';
-const api_base = "http://localhost:3010";
+const api_base = "https://css-website-nqu8.onrender.com/";
 const timestamp = 167822137944;
 const date = new Date(timestamp);
 console.log(typeof timestamp)
@@ -131,7 +131,7 @@ const [loading,setLoading]=useState(true)
     //pass the json string
     //console.log("here1")
     setLoading(true);
-    fetch("http://localhost:3010/todos")
+    fetch("https://css-website-nqu8.onrender.com/todos")
       .then((res) => res.json())
       .then((data) => setTodos(data))
       .catch((err) => console.error("Error: ", err));
@@ -139,7 +139,7 @@ const [loading,setLoading]=useState(true)
   };
   const deleteTodo = async (id) => {
     setLoading(true);
-    const data = await fetch( "http://localhost:3010/todo/delete/" + id, {
+    const data = await fetch( "http://https://css-website-nqu8.onrender.com/todo/delete/" + id, {
       method: "DELETE",
     }).then((res) => res.json());
     setLoading(false);
@@ -151,7 +151,7 @@ const [loading,setLoading]=useState(true)
   const addTodo = async () => {
     setLoading(true);
     
-    const data = await fetch("http://localhost:3010/todo/new", {
+    const data = await fetch("https://css-website-nqu8.onrender.com/todo/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -201,7 +201,7 @@ useEffect(()=>{
 function getImage() {
  // console.log("called");
  setLoad(true)
-  fetch("http://localhost:3010/get-image", {
+  fetch("https://css-website-nqu8.onrender.com/get-image", {
     method: "GET",
   })
     .then((res) => {
@@ -227,7 +227,7 @@ function uploadImage() {
  
 
   console.log("clicked")
-  fetch("http://localhost:3010/upload-image", {
+  fetch("https://css-website-nqu8.onrender.com/upload-image", {
       method: "POST",
       crossDomain: true,
       headers: {
