@@ -251,14 +251,14 @@ function uploadImage() {
 return (
 <div className="d">
 {value===''||value===null?<>
-<div>
+<div  onClick={handleClick}>
 
  
-    <center  className="cent" style={{padding:'100px',height:'100vh',backgroundColor:'#E1EFF0',opacity:'1'}}>
+    <center  className="cent" style={{padding:'40vw',height:'100vh',backgroundColor:'#E1EFF0',opacity:'1'}}>
         
          
 
-      <GoogleIcon  sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid red',borderRadius:'50px',color:'orange',right:'600px'}} onClick={handleClick} className="logo floating"/>
+      <GoogleIcon  sx={{fontSize:'100px' ,backgroundColor:'green',border:'8px solid red',borderRadius:'50px',color:'orange',right:'50vw'}} onClick={handleClick} className="logo floating"/>
       
       </center>
 

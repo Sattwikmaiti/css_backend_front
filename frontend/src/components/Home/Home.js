@@ -84,7 +84,7 @@ const Home = () => {
 
   
   return (
-    <> 
+    <> <div className="responsive">
       <div className="imageslider container  ">
         
         <div
@@ -92,7 +92,7 @@ const Home = () => {
           class="carousel slide"
           data-ride="carousel"
           data-wrap="true"
-          data-interval="1000"
+          data-interval="3000"
 
         >
           <ol class="carousel-indicators">
@@ -140,9 +140,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" reveal motto " style={{height:'400px',padding:'10px',padding:'20px'}}>
+      <div className=" reveal motto " style={{height:'auto',padding:'10em',width:'80vw'}}>
         <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>OUR MOTTO</h2>
-        <p style={{ fontSize: "30px" }}>
+        <p style={{ fontSize: "5vh" }}>
         <TypeAnimation
     // Same String at the start will only be typed once, initially
     sequence={[
@@ -152,7 +152,7 @@ const Home = () => {
    
     ]}
     speed={1} // Custom Speed from 1-99 - Default Speed: 40
-    style={{ fontSize: '40px' }}
+    style={{ fontSize: '5vh' }}
     wrapper="span" // Animation will be rendered as a <span>
     repeat={Infinity} // Repeat this Animation Sequence infinitely
   />
@@ -174,7 +174,7 @@ const Home = () => {
   <div className="di">
       <center>
         <div className="ico " style={{padding:'70px',color:'white'}}>
-            <GitHubIcon className="floating" style={{fontSize:'50px',left:'185px',translateY:'(12px)'}} />
+            <GitHubIcon className="floating" style={{fontSize:'50px',left:'20vw',translateY:'(12px)'}} />
         </div>
     
          <div className="names">
@@ -187,7 +187,7 @@ const Home = () => {
   <div className="di">
       <center>
         <div className="ico" style={{padding:'70px',color:'white'}}>
-            <GitHubIcon  className="floating" style={{fontSize:'50px',left:'600px'}} />
+            <GitHubIcon  className="floating" style={{fontSize:'50px',left:'50vw'}} />
         </div>
     
          <div className="names">
@@ -200,7 +200,7 @@ const Home = () => {
   <div className="di">
       <center>
         <div className="ico" style={{padding:'70px',color:'white'}}>
-            <GitHubIcon  className="floating"  style={{fontSize:'50px',left:'1020px'}} />
+            <GitHubIcon  className="floating"  style={{fontSize:'50px',left:'80vw'}} />
         </div>
     
          <div className="names">
@@ -329,6 +329,7 @@ const Home = () => {
       </div>
 
       <div className="space" style={{ padding:'30px',}}></div>
+      </div>
     </>
   );
 };

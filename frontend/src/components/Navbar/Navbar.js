@@ -35,7 +35,7 @@ const Navbar = () => {
   <span onClick={()=>navigate('/Home')}><img src={logo} style={{height:'60px',width:'60px',borderRadius:'60px',border:'2px solid violet'}} /> <h style={{color:'black',marginLeft:'20px',fontWeight:'bold',
 fontFamily: 'Lora, serif'
 }}>
-  &nbsp; Computer  &nbsp; Science  &nbsp; Society
+ 
     
     </h></span>
   
