@@ -28,7 +28,8 @@
   background-color: beige;
   opacity: 1;
   padding: 10px;
-  color:black
+  color:black;
+  width:100%;
 }
 .txt
 {
@@ -39,13 +40,13 @@
 input[type=text] {
   padding:10px;
   
-   width: 300px;
+   width: 30rem;
    background-color: lightcyan;
    color: black;
 }  input[type=email] {
   padding:10px;
   
-  width: 300px;
+  width: 30em;
   background-color: lightcyan;
   color: black;
 
@@ -92,6 +93,7 @@ textarea {
 .cont
 {
   background-image: url("../Home/p3.png");
+
 }
 .bodyy{
   backdrop-filter: blur(80px);

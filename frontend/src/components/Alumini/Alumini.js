@@ -16,7 +16,7 @@ const Alumini = () => {
 
 
   return (
-  
+    <div className="wrapper" style={{width:'100vw'}}>
     <div className="containerr" style={{backgroundColor:'black'}}>
       <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'20vw'}}><h1>OUR ALUMINI</h1> </center>
       <div className="box">
@@ -150,6 +150,7 @@ const Alumini = () => {
 </div>
 
     
+    </div>
     </div>
     
   )
