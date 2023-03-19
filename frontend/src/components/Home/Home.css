@@ -1,6 +1,21 @@
 /* Check out the navigation section. It's the most important part. */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+@media   screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+   background-color: black !important;
+   color:whitesmoke
+}
+
 * {
   box-sizing: border-box;
 }
@@ -98,7 +113,20 @@ width:220px;
    margin:-400px;
    align-self: center;
 }
+@media   screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+   background-color: black !important;
+   color:whitesmoke
+}
 /* Blockquote header */
 .blockquote h1 {
    font-family: 'Abril Fatface', cursive;
@@ -309,13 +337,7 @@ width:250px
 }
 
 
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-   background-color: black !important;
-   color:whitesmoke
-}
+
 
 .c1{
 
