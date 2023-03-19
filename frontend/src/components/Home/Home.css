@@ -317,13 +317,22 @@ body {
    color:whitesmoke
 }
 
+.c1{
 
+  margin:10px;
+  
+}
 
-
+.grid{
+  border-right:4px solid white;
+  height:400px
+}
 .motto {
   text-align: center;
   margin: 60px auto;
   max-width: 800px;
+
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .services {

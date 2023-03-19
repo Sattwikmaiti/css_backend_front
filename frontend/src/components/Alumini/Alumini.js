@@ -18,7 +18,7 @@ const Alumini = () => {
   return (
   
     <div className="containerr">
-      <center><h1>Our Alumini...</h1> </center>
+      <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'20vw'}}><h1>OUR ALUMINI</h1> </center>
       <div className="box">
    <div className="row">
    <div className="col">
