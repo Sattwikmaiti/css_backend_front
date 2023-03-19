@@ -94,7 +94,10 @@ body{
     transform: translateY(4px);
     transition: all 200ms ease-in-out;
   }
- 
+ .description
+ {
+  font-family: serif
+ }
 
 @-webkit-keyframes gradientBG {
   0% {

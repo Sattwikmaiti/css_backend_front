@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GoogleIcon from '@mui/icons-material/Google';
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import p111 from "./p4.jpg"
 import p9 from "./p9.jpg"
 import p1 from "./p1.jpg"
@@ -339,11 +340,23 @@ return (
 
 </>:<>
 
-     <center><h1>Comments({todos.length})   and  Gallery({allImage.length})</h1></center>
+     <center ><span ><h1 style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'0vw'}}>Comments({todos.length})   and  Gallery({allImage.length})  <a href="#imges" className="tools"><ArrowCircleDownIcon style={{marginBottom:'15px',visibility: 'visible',color:'orange'}}/></a> </h1>
+      
+     
+     
+     </span>
+     
+ 
+
+
+
+     
+     
+   </center>
 
    
   <center> {/*add comment section  */}
-                 <div className="commentf" style={{pading:'20px',gap:'10px',left:'20px',color:'black',width:'100px'}} > <h4 >Comments ({todos.length}) </h4></div>
+                 <div className="commentf" style={{pading:'20px',gap:'10px',left:'20px',color:'black',width:'100px'}} > </div>
                  </center>
 
 
@@ -428,7 +441,7 @@ return (
               
                 
 <br/>    
-<div className="imge container" style={{height:'300px',width:'300px'}}>
+<div className="imge container"  id="imges"style={{height:'300px',width:'300px'}}>
 {image ==="" || image == null ? 
   
   <div className="preview">

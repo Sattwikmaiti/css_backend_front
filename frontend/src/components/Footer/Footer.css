@@ -11,12 +11,7 @@
 {
   color: aliceblue;
 }
-.all 
-{backdrop-filter: blur(40px);
-   
-    
 
-}
 
 
 .forms
@@ -43,14 +38,14 @@
 
 input[type=text] {
   padding:10px;
-  border:3px solid blueviolet;
-   width: 200px;
+  
+   width: 300px;
    background-color: lightcyan;
    color: black;
 }  input[type=email] {
   padding:10px;
-  border:3px solid blueviolet;
-  width: 200px;
+  
+  width: 300px;
   background-color: lightcyan;
   color: black;
 
@@ -59,7 +54,7 @@ input[type=text] {
 textarea {
   resize: none;
   opacity: 1;
-  color: black;
+  color: white;
 }
 
 

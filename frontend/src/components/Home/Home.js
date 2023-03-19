@@ -16,12 +16,13 @@ import animesh from "../images/animesh.jpeg"
 import pp1 from "../images/1.png"
 import pp2 from "../images/2.png"
 import pp3 from "../images/3.png"
-import p from "./1.png";
+import p from "./1.jpeg";
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { Grid } from "@mui/material";
 
-const Home = () => { const [count, setCount] = useState(0);
+const Home = () => { 
+  const [count, setCount] = useState(0);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(10);
   const [duration, setDuration] = useState(2);
@@ -38,34 +39,27 @@ const Home = () => { const [count, setCount] = useState(0);
     };
   }, [start, end, duration]);
   
-  function reveal() {
-    
-  function lol (){
-   
-    let count = document.querySelectorAll(".counter");
+
+
+  const [count1, setCount1] = useState(0);
+  const [start1, setStart1] = useState(0);
+  const [end1, setEnd1] = useState(22);
+  const [duration1, setDuration1] = useState(2);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCount1(end1);
+      setStart1(end1);
+      setEnd1(start1);
+    }, duration1 * 1000 + 100); // add 100ms delay to prevent flicker
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [start1, end1, duration1]);
   
-   
-    count.forEach((val)=>
-    {
-    
-      let str=0;
-      let end=parseInt(val.getAttribute("data-val"));
-    
-     
-      
-      let counter=setInterval(function(){
-        str+=1;
-        val.textContent=str;
-        if(str===end)
-        {
-          clearInterval(counter);
-          
-          
-        }
-      },400)
-    })
-  }
-  lol()
+  function reveal() {
+ 
     var reveals = document.querySelectorAll(".reveal");
   
     for (var i = 0; i < reveals.length; i++) {
@@ -146,13 +140,13 @@ const Home = () => { const [count, setCount] = useState(0);
         </div>
       </div>
 
-      <div className=" reveal motto " style={{height:'200px'}}>
-        <h2>OUR MOTTO</h2>
+      <div className=" reveal motto " style={{height:'400px',padding:'10px',padding:'20px'}}>
+        <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>OUR MOTTO</h2>
         <p style={{ fontSize: "30px" }}>
         <TypeAnimation
     // Same String at the start will only be typed once, initially
     sequence={[
-    'Sometimes it is the people no one can  imagine anything of who do the things no one can imagine',
+    'Sometimes it is the people no one can  imagine anything of who do the things no one can imagine.',
     1000,
   
    
@@ -166,13 +160,13 @@ const Home = () => { const [count, setCount] = useState(0);
       </div>
 
    <center>
-      <div className=" reveal body">
+      <div className=" reveal body" >
         <h1 className="black-lives-matter"># COMPUTER SCIENCE SOCIETY </h1>
       </div>
       </center>
  <center >
-    <h3 style={{marginTop:'100px',}}>
-      WE 
+    <h3 style={{margin:'100px', fontSize:'40px' ,borderTop:'2px solid white',borderBottom:'2px solid white'}}>
+       WE 
     </h3>
   </center>
 <div className="box" style={{display:'flex',justifyContent:'space-around',flexDirection:'row',padding:'0px',backgroundColor:'black' ,boxShadow:'2px 2px 2px 2px solid white'}}>
@@ -180,7 +174,7 @@ const Home = () => { const [count, setCount] = useState(0);
   <div className="di">
       <center>
         <div className="ico " style={{padding:'70px',color:'white'}}>
-            <GitHubIcon className="floating" style={{fontSize:'50px',left:'175px',translateY:'(12px)'}} />
+            <GitHubIcon className="floating" style={{fontSize:'50px',left:'185px',translateY:'(12px)'}} />
         </div>
     
          <div className="names">
@@ -197,9 +191,9 @@ const Home = () => { const [count, setCount] = useState(0);
         </div>
     
          <div className="names">
-          EVENTS
+          SINCE
          </div>
-         <CountUp start={start} end={end} duration={duration} useEasing={true} />
+         2021
         
       </center>
   </div>
@@ -210,10 +204,10 @@ const Home = () => { const [count, setCount] = useState(0);
         </div>
     
          <div className="names">
-          EVENTS
+         MEMBERS
          </div>
          <h1>
-         <CountUp start={start} end={end} duration={duration} useEasing={true} />
+         <CountUp start={start1} end={end1} duration={duration1} useEasing={true} />
       </h1>
         
       </center>
@@ -278,40 +272,63 @@ const Home = () => { const [count, setCount] = useState(0);
 
     
       </div>  
-      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'400px',marginBottom:'50px'}}>
+      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'400px',marginTop:'400px',marginBottom:'50px',fontFamily: 'Lora, serif'}}>
       <div class="blockquote-wrapper">
   <div class="blockquote">
-    <h1>
-    Sometimes it is the people no one can <span style={{color:'#2F4F4F'}}> imagine anything of</span> who do the things no one can imagine<span style={{color:'#778899'}}>.</span>
+    <h1 style={{fontFamily: 'Lora, serif'}}>
+    Sometimes it is the people no one can <span style={{color:'#2F4F4F',fontFamily: 'Lora, serif'}}> imagine anything of</span> who do the things no one can imagine<span style={{color:'#778899'}}>.</span>
      </h1>
-    <h4> Alan Turing<br/><em>Father of Modern Computers</em></h4>
+    <h4 style={{borderBottom:'2px solid white'}}> Alan Turing<br/><em>Father of Modern Computers</em></h4>
     
   </div>
 </div>
       </div>
+      <center style={{padding:'20px'}}>  <h1>Contact Us</h1></center>
 
-      <div className="reveal MAP">
-        <div
-          className="g"
-          style={{
-            fontSize: "35px",
-            fontWeight: "bolder",
-            color: "white",
-            padding: "10px 20px 0 500px",
-          }}
-        >
-          GET IN TOUCH
+  
+      <div className="reveal  container"  style={{height:'400px',display:'flex'}}>
+        <div className="grid" style={{paddingTop:'20px'}}>
+        <div className="c1" style={{backgroundColor:'#F0F8FF',width:'300px',height:'80px',color:'black',fontWeight:'bold'}}>
+           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+           ABHISHEK BASU (PRESIDENT)
+           </div>
+           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+            CONTACT : 9712245467
+           </div>
+          </div> 
+          <div className="c1" style={{backgroundColor:'grey',width:'300px',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
+           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+           ABHISHEK BASU (VICE PRESIDENT)
+           </div>
+           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+            CONTACT : 9712245467
+           </div>
+          </div> 
+          <div className="c1" style={{backgroundColor:'#F0F8FF',width:'300px',height:'80px',color:'black',fontWeight:'bold'}}>
+           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+           ABHISHEK BASU (PRESIDENT)
+           </div>
+           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+            CONTACT : 9712245467
+           </div>
+          </div> 
+          
+          <div className="c1" style={{backgroundColor:'grey',width:'300px',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
+           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+           ABHISHEK BASU (PRESIDENT)
+           </div>
+           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+            CONTACT : 9712245467
+           </div>
+          </div> 
         </div>
+         <div className="grid-2">
+          <img src={p}  style={{height:'400px',marginLeft:'10px',width:'50vw'}}/>
 
-        <img
-          src={p}
-          style={{
-            height: "500px ",
-            width: "80vw",
-            padding: "0px 0px 0 200px",
-          }}
-        />
+         </div>
       </div>
+
+      <div className="space" style={{ padding:'30px',}}></div>
     </>
   );
 };

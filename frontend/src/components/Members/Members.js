@@ -39,7 +39,7 @@ const Members = () => {
 
     <div className="container" style={{padding:'30px',width:'80vw'}}>
   <center><div className="year" style={{color:'white',backgroundColor:'black',fontWeight:'bolder',fontSize:'40px'}}>
-        Office Bearer
+  <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'0vw'}}><h1>OFFICE BEARER</h1> </center>
       </div>
       </center>
   <div className="box" style={{padding:'10px'}}>
@@ -105,7 +105,7 @@ const Members = () => {
 
 <div className="container" style={{padding:'30px',width:'80vw'}}>
 <center><div className="year" style={{color:'white',fontWeight:'bolder',fontSize:'40px',backgroundColor:'black'}}>
-        Third Year Family
+<center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'0vw'}}><h1>BATCH-2024</h1> </center>
       </div>
       </center>
   <div className="box" style={{padding:'10px'}}>

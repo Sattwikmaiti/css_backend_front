@@ -31,7 +31,7 @@ const Events = () => {
         <div className="top-section">
           <h1>
             <center style={{ color: "white", backgroundColor: "black" }}>
-              TIMELINE
+            <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'0vw'}}><h1>TIMELINE</h1> </center>
             </center>
           </h1>
         </div>
