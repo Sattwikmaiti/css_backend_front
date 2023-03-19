@@ -55,9 +55,9 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
 
     }
   return (
-    <>
-    
-    <div className="connect"  style={{padding :'10px',width:'100vw'}}>
+    <> 
+    <div className="container" >
+    <div className="connect"  style={{padding :'10px',width:'auto'}}>
              
              <center className="containert all" style={{padding:'100px'}}>
 
@@ -87,13 +87,13 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
        </div>
 
    <center>
-        <div className="containerr cont" id="gg" style={{width:'100vw'}}>
-  <div className="pay">
+        <div className="container" id="gg"  style={{width:'auto'}}>
+  <div className="pay" style={{width:'auto'}}>
 Want To Join CSS ? Fill it UP!!
   </div>
  
-
-   <div className="bodyy">
+ 
+   <div className="bodyy"  style={{width:'auto'}}>
     
    <div className="forms">
    <form >
@@ -136,7 +136,7 @@ Want To Join CSS ? Fill it UP!!
     value={message}
     placeholder="LEAVE A MESSAGE FOR US"
     
-   style={{opacity:'1',fontSize:'14px'}}
+   style={{opacity:'1',fontSize:'14px',color:'black'}}
     onChange={(event) => {
       setmessage(event.target.value);
     }}
@@ -160,6 +160,8 @@ Want To Join CSS ? Fill it UP!!
     </div>
             
     </center>
+    </div>
+    
     </>
   )
 }
