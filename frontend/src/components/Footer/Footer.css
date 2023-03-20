@@ -99,3 +99,13 @@ textarea {
   backdrop-filter: blur(80px);
 
 }
+
+
+
+
+@media screen  and (max-width:1000){
+   .header{
+      background-color: rgb(46, 106, 158);
+  }
+  
+}

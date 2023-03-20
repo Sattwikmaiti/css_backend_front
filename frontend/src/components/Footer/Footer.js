@@ -56,10 +56,9 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
     }
   return (
     <> 
-    <div className="container" >
-    <div className="connect"  style={{padding :'10px',width:'auto'}}>
-             
-             <center className="containert all" style={{padding:'100px'}}>
+   
+      <div className="contact-us" >
+           <center className="containert all" style={{padding:'100px'}}>
 
                <h3 style={{padding:'10px',fontWeight:'bolder'}}>Connect Us</h3>
                
@@ -84,10 +83,85 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
                
                </center>
                
-       </div>
+         <div className="header" style={{backgroundColor:'#FFDEAD',display:'flex',justifyContent:'center',color:'black',width:'80em'}}>
+           Want To join CSS ! Mail US NOW .
+         </div>
+          <div className="emailus" style={{backgroundColor:'#36454F',width:'100vw'}}>
+         <div className="form" style={{marginLeft:'25em'}} >
+          <form>
+               <div className="input author">
+               <input
+    type="text"
+    id="name"
+    name="name"
+    value={name}
+    placeholder="NAME"
+    onChange={(event) =>
+      setname(event.target.value)
+    } required
+  
+  />
+ 
+               </div>
+                  
+               <div className="input email">
+               <input 
+    type="email"
+    id="emailid"
+    name="emailid"
+    value={emailid}
+    placeholder="EMAIL"
+    onChange={(event) => {
+      setemailid(event.target.value);
+    }}
+    required
+  />
 
-   <center>
-        <div className="container" id="gg"  style={{width:'auto'}}>
+             </div>
+
+
+             <div className="input msg" style={{marginLeft:'5em'}}>
+             <textarea 
+    type="text"
+    id="message"
+    rows="4" cols="50"
+    name="message"
+    value={message}
+    placeholder="LEAVE A MESSAGE FOR US"
+    
+   style={{opacity:'1',fontSize:'14px',color:'black'}}
+    onChange={(event) => {
+      setmessage(event.target.value);
+    }}
+    required
+  />
+                </div>
+
+                <div className="submit" style={{marginLeft:'7em'}}>
+                <button type="submit"  className="btn btn-two" onClick={sendEmail 
+}>Submit</button>
+
+                </div>
+               
+                </form>
+         </div>
+         </div>
+
+
+
+      </div>
+   
+   </>
+  )
+}
+
+export default Footer
+
+
+
+
+
+{/*   <div className="container" id="gg"  style={{width:'auto'}}>
   <div className="pay" style={{width:'auto'}}>
 Want To Join CSS ? Fill it UP!!
   </div>
@@ -146,24 +220,4 @@ Want To Join CSS ? Fill it UP!!
   
      <div className="txt">
   <button type="submit"  className="btn btn-two" onClick={sendEmail 
-}>Submit</button>
-</div>
- 
-  
-</form>     
-
-
-                                
-    </div>
-    </div>
-    
-    </div>
-            
-    </center>
-    </div>
-    
-    </>
-  )
-}
-
-export default Footer
+}>Submit</button>*/}
