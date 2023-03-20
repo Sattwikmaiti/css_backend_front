@@ -60,8 +60,11 @@ const Favourite = () => {
       },
       body: JSON.stringify({
         text: updates, // the updated text
+        
       }),
-    }).then((res) => res.json());
+    }).then((res) => {res.json();
+      console.log({updates})
+    });
     
     // handle the response data
     if (data.error) {
