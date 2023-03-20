@@ -113,11 +113,6 @@ width:220px;
    margin:-400px;
    align-self: center;
 }
-@media   screen and (max-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
-}
 
 
 body {
@@ -213,13 +208,8 @@ body {
 
 }
 
-
 .di{
-
-  box-shadow: 5px 5px 5px 5px rgba(145, 141, 149, 0.488);
-
-
-
+  border:1px solid whitesmoke
 }
 
  .ico{
@@ -351,17 +341,30 @@ width:250px
 }
 
 .grid{
-  border-right:4px solid white;
+  
   height:400px
 }
 .motto {
   text-align: center;
   margin: 60px auto;
-  max-width: 800px;
+  max-width: auto !important;
 
   font-family: 'Courier New', Courier, monospace;
 }
 
+@media screen and (max-width: 1000px){
+
+  .motto{
+    margin-left:50em;
+    width:100vw;
+    text-align: center;
+
+    font-size:10px;
+    height:30px;
+    
+  }
+  
+}
 .services {
 
   text-align: center;
@@ -487,9 +490,15 @@ img.prdts:hover
 
 .container
 {
-  width:800px
+  width:100vw
 }
 
+@media only screen and (max-width: 1000px) {
+  .container{
+    margin-left: 20em;
+    width :800px;
+  }
+}
 
 
 .featured {
@@ -626,7 +635,7 @@ html {
   height: 100%;
 }
 .body {
-  width: 80vw;
+  width: 100vw;
   height: 80vh;
   display: flex;
   flex-direction: row;
@@ -635,6 +644,90 @@ html {
   align-content: center;
   flex-wrap: wrap;
   background: #EEEEF5;
+}
+.container1{
+  width:30em;
+  height:auto;
+  
+  background-color: #292c2f;
+    border:2px solid white ;
+    margin:2em
+
+  
+  }
+  .center {
+    text-align: center;
+    width: 100%;
+}
+.iconss
+.git {
+  font-size:100px ;
+}
+.c1 {
+  width:25vw
+}
+@media   screen and (max-width: 1000px) {
+  .c1 {
+   width: 55vw
+  }
+   .container1{
+
+    width:50em
+   }
+
+.iconss{
+  padding-right:2vw;
+
+}
+.round{
+  margin-left:20px
+}
+  .body {
+    width: 200vw;
+    height: 100vh;
+    margin-left:20em;
+  }
+
+  .div{
+    margin-left:40em;
+    border-top:2px solid white;
+    border-bottom:2px solid white
+  }
+  .di{
+
+    margin:40px;
+    width:500px
+  }
+  .iconss .git{
+    font-size:50px
+  }
+  .container1{
+    width:100vw
+  }
+
+  .wrapp{
+    margin-left:400px
+  }
+  .wrapp h3{
+    padding-left:100px;
+    margin-left:100px
+  }
+  .gapp{
+    padding-left:300px
+  }
+.c1 .g1{
+  width:600px
+}
+.c1 .g2{
+  width:600px
+}
+.c1{
+  width:40vw
+}
+.grid-2 img
+{
+  margin-left:100px
+}
 }
 
 

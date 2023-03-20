@@ -84,7 +84,9 @@ const Home = () => {
 
   
   return (
-    <> <div className="responsive" style={{display:'center',paddingLeft:'10em',width:'auto'}}>
+    <> 
+    
+    
       <div className="imageslider container  ">
         
         <div
@@ -139,8 +141,11 @@ const Home = () => {
           </a>
         </div>
       </div>
+      <div className="space" style={{ padding:'30px',}}></div>
 
-      <div className=" reveal motto " style={{height:'auto',padding:'10em',width:'80vw'}}>
+
+
+      <div className="  motto " style={{height:'auto',padding:'10em',width:'100vw'}}>
         <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>OUR MOTTO</h2>
         <p style={{ fontSize: "5vh" }}>
         <TypeAnimation
@@ -151,7 +156,7 @@ const Home = () => {
   
    
     ]}
-    speed={1} // Custom Speed from 1-99 - Default Speed: 40
+    speed={1} // Custom Speed from 1-99 - Default Speed: 20
     style={{ fontSize: '5vh' }}
     wrapper="span" // Animation will be rendered as a <span>
     repeat={Infinity} // Repeat this Animation Sequence infinitely
@@ -159,64 +164,82 @@ const Home = () => {
         </p>
       </div>
 
+      <div className="space" style={{ padding:'30px',}}></div>
+
    <center>
       <div className=" reveal body" >
         <h1 className="black-lives-matter"># COMPUTER SCIENCE SOCIETY </h1>
       </div>
       </center>
- <center >
-    <h3 style={{margin:'100px', fontSize:'40px' ,borderTop:'2px solid white',borderBottom:'2px solid white'}}>
-       WE 
-    </h3>
-  </center>
-<div className="box" style={{display:'flex',justifyContent:'space-around',flexDirection:'row',padding:'0px',backgroundColor:'black' ,boxShadow:'2px 2px 2px 2px solid white'}}>
- 
-  <div className="di">
-      <center>
-        <div className="ico " style={{padding:'70px',color:'white'}}>
-            <GitHubIcon className="floating" style={{fontSize:'50px',left:'20vw',translateY:'(12px)'}} />
-        </div>
-    
-         <div className="names">
-          EVENTS
-         </div>
-         <CountUp start={start} end={end} duration={duration} useEasing={true} />
-        
-      </center>
-  </div>
-  <div className="di">
-      <center>
-        <div className="ico" style={{padding:'70px',color:'white'}}>
-            <GitHubIcon  className="floating" style={{fontSize:'50px',left:'50vw'}} />
-        </div>
-    
-         <div className="names">
-          SINCE
-         </div>
-         2021
-        
-      </center>
-  </div>
-  <div className="di">
-      <center>
-        <div className="ico" style={{padding:'70px',color:'white'}}>
-            <GitHubIcon  className="floating"  style={{fontSize:'50px',left:'80vw'}} />
-        </div>
-    
-         <div className="names">
-         MEMBERS
-         </div>
-         <h1>
-         <CountUp start={start1} end={end1} duration={duration1} useEasing={true} />
-      </h1>
-        
-      </center>
-  </div>
-</div>
-  
-      <div className="space" style={{padding:'100px'}}></div>
 
-    <div className="container reveal services part" >
+     
+  <div className="  motto " style={{height:'auto',width:'100vw'}}>
+        <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>WE </h2></div>
+      <div className="wrapp">
+ 
+  <center>
+    <div className="grid" style={{display:'flex',justifyContent:'space-between',flexDirection:'row'}}>
+          <div className="container1">
+                  <div >
+                    <center>
+
+                   
+                    <div className="iconss" style={{height:'30vh',backgroundColor:'grey',paddingRight:'10vw'}}>
+                     <GitHubIcon  className="git floating"style={{alignSelf:'center',justifyContent:'center'}} />
+                    </div>
+                     <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
+                        EVENTS
+                     </div>
+                    <div className="data" style={{fontSize:'3em'}}>
+                    <CountUp start={start} end={end} duration={duration} useEasing={true} />
+                    </div>
+                    </center>
+
+                  </div>
+          </div>
+          <div className="container1">
+          <div >
+                    <center>
+
+                   
+                    <div className="iconss " style={{height:'30vh',backgroundColor:'grey' ,paddingRight:'10vw'}}>
+                     <GitHubIcon className="git floating" style={{alignSelf:'center',justifyContent:'center'}} />
+                    </div>
+                     <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
+                        SINCE
+                     </div>
+                    <div className="data" style={{fontSize:'3em'}}>
+                    2021
+                    </div>
+                    </center>
+
+                  </div>
+          </div>
+
+             <div className="container1">
+             <div >
+                    <center>
+
+                   
+                    <div className="iconss" style={{height:'30vh',backgroundColor:'grey',paddingRight:'10vw'}}>
+                     <GitHubIcon  className="git floating" style={{alignSelf:'center',justifyContent:'center',marginRight:'10vw'}} />
+                    </div>
+                     <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
+                        MEMBERS
+                     </div>
+                    <div className="data" style={{fontSize:'3em'}}>
+                    <CountUp start={start1} end={end1} duration={duration1} useEasing={true} />
+                    </div>
+                    </center>
+
+                  </div>
+             </div>
+    </div>
+  </center>
+  </div>
+
+      <div className="space" style={{padding:'100px'}}></div>
+      <div className="container reveal services part" >
         <div
           className="lol"
           style={{ fontSize: "20px", fontWeight: "bolder", color: "white" , backgroundColor:'black',height:'160px',width:'160px',borderRadius:'20px'}}
@@ -272,7 +295,10 @@ const Home = () => {
 
     
       </div>  
-      <div className="reveal  container" style={{display:'flex',flexDirection:'row',height:'300px',width:'auto',marginTop:'400px',marginBottom:'50px',fontFamily: 'Lora, serif',marginLeft:'auto'}}>
+      <div className="space" style={{padding:'100px'}}></div>
+      
+   
+      <div className="reveal  container gapp" style={{display:'flex',flexDirection:'row',height:'300px',width:'auto',marginTop:'200px',marginBottom:'50px',fontFamily: 'Lora, serif',marginLeft:'auto'}}>
       <div class="blockquote-wrapper">
   <div class="blockquote">
     <h1 style={{fontFamily: 'Lora, serif'}}>
@@ -283,53 +309,53 @@ const Home = () => {
   </div>
 </div>
       </div>
-      <center style={{padding:'20px'}}>  <h1>Contact Us</h1></center>
+      <div className="  motto " style={{height:'auto',width:'100vw'}}>
+        <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>CONTACT US </h2></div>
 
   
-      <div className="reveal  container"  style={{height:'400px',display:'flex'}}>
-        <div className="grid" style={{paddingTop:'20px'}}>
-        <div className="c1" style={{backgroundColor:'#F0F8FF',width:'300px',height:'80px',color:'black',fontWeight:'bold'}}>
-           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+      <div className="reveal  container"  style={{height:'80vh',display:'flex'}}>
+        <div className="grid" >
+        <div className="c1" style={{backgroundColor:'#F0F8FF',height:'80px',color:'black',fontWeight:'bold'}}>
+           <div className="g1" style={{fontSize:'20px',paddingLeft:'5px'}}>
            ABHISHEK BASU (PRESIDENT)
            </div>
-           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+           <div className="g2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
             CONTACT : 9712245467
            </div>
           </div> 
-          <div className="c1" style={{backgroundColor:'grey',width:'300px',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
-           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+          <div className="c1" style={{backgroundColor:'grey',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
+           <div className="g1" style={{fontSize:'20px',paddingLeft:'5px'}}>
            ABHISHEK BASU (VICE PRESIDENT)
            </div>
-           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+           <div className="g2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
             CONTACT : 9712245467
            </div>
           </div> 
-          <div className="c1" style={{backgroundColor:'#F0F8FF',width:'300px',height:'80px',color:'black',fontWeight:'bold'}}>
-           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+          <div className="c1" style={{backgroundColor:'#F0F8FF',height:'80px',color:'black',fontWeight:'bold'}}>
+           <div className="g1" style={{fontSize:'20px',paddingLeft:'5px'}}>
            ABHISHEK BASU (PRESIDENT)
            </div>
-           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+           <div className="g2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
             CONTACT : 9712245467
            </div>
           </div> 
           
-          <div className="c1" style={{backgroundColor:'grey',width:'300px',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
-           <div className="1" style={{fontSize:'20px',paddingLeft:'5px'}}>
+          <div className="c1" style={{backgroundColor:'grey',height:'80px',color:'#F0F8FF',fontWeight:'bold'}}>
+           <div className="g1" style={{fontSize:'20px',paddingLeft:'5px'}}>
            ABHISHEK BASU (PRESIDENT)
            </div>
-           <div className="2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
+           <div className="g2" style={{fontSize:'20px',paddingLeft:'5px'}}  >
             CONTACT : 9712245467
            </div>
           </div> 
         </div>
          <div className="grid-2">
-          <img src={p}  style={{height:'400px',marginLeft:'10px',width:'50vw'}}/>
+          <img src={p}  style={{height:'70vh',marginLeft:'10px',width:'50vw'}}/>
 
          </div>
       </div>
-
-      <div className="space" style={{ padding:'30px',}}></div>
-      </div>
+     
+ 
     </>
   );
 };
