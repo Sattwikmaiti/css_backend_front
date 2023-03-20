@@ -86,7 +86,7 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
          <div className="header" style={{backgroundColor:'#FFDEAD',display:'flex',justifyContent:'center',color:'black',width:'80em'}}>
            Want To join CSS ! Mail US NOW .
          </div>
-          <div className="emailus" style={{backgroundColor:'#36454F',width:'100vw'}}>
+          <div className="emailus" style={{backgroundColor:'#36454F',width:'80rem'}}>
          <div className="form" style={{marginLeft:'25em'}} >
           <form>
                <div className="input author">

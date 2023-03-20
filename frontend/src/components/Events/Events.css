@@ -34,10 +34,10 @@
 }
 
 
-@media  screen and (max-width: 768px){
+@media  screen and (max-width: 1068px){
    .resp{
-    margin-left:20vw;
-    padding-left:20vw
+    margin-left:300px;
+    padding-left:300px
    }
   
 }

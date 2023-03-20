@@ -53,7 +53,7 @@ const Favourite = () => {
   {
   
     
-    const data = await fetch(api_base + "/todo/update/" + id, {
+    const data = await fetch("https://css-website-nqu8.onrender.com/todo/update/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
