@@ -64,7 +64,20 @@ const Favourite = () => {
       }),
     }).then((res) => {res.json();
       console.log({updates})
-    });
+      const updatedTodos = todos.map(todo => {
+        if (todo._id === id) {
+          // replace the old todo with the updated one
+          return data;
+        } else {
+          return todo;
+        }
+      });
+    setupdates("")
+    setDate("");
+      setTodos(updatedTodos);
+      setPopupActiveu(false);
+
+    }),catch((err)=>console.log(err));
     
     // handle the response data
     if (data.error) {
