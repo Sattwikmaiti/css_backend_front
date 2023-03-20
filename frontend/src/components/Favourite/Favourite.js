@@ -313,7 +313,7 @@ return (
               
         { updates===""   ? "":
             <div className="update button" style={{padding:'10px',margin:'10px',color:'white',width:'250px'}} onClick={() => {
-              console.log(date);update(updates)}}>
+              console.log(date);update(date)}}>
              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
              Update Comment
         </button>
