@@ -77,7 +77,7 @@ const Favourite = () => {
       setTodos(updatedTodos);
       setPopupActiveu(false);
 
-    }),catch((err)=>console.log(err));
+    }).catch((err)=>console.log(err));
     
     // handle the response data
     if (data.error) {
