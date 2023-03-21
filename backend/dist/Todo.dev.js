@@ -2,7 +2,8 @@
 
 var mongoose = require('mongoose');
 
-var Schema = mongoose.Schema; //making model (dabase)
+var Schema = mongoose.Schema;
+var url = "https://i.stack.imgur.com/34AD2.jpg"; //making model (dabase)
 
 var Todoschema = new Schema({
   text: {
@@ -26,7 +27,8 @@ var Todoschema = new Schema({
     "default": new Date().getTime()
   },
   avatar: {
-    type: String
+    type: String,
+    "default": url
   }
 }); //exporting the model of todo list
 

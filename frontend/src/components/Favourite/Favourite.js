@@ -416,7 +416,7 @@ return (
   {todos.length>0?(todos.map((todo)=>{
   return (
       <div style={{display:'flex',width:'100%',height:'auto ',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
-      <img src={todo.avatar} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
+      <img src={todo.avatar?todo.avatar:p1} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
         <div style={{paddingLeft:'1rem',width:'100%'}}>
             <div style={{display:'flex',gap:'1rem',marginBottom:'1px',alignItems:''}}>
                 <p style={{fontWeight:'bold',fontSize:"1.2rem",color:"#008B8B"}}>{todo.author}</p>
