@@ -122,6 +122,11 @@ const Favourite = () => {
      
   }
 
+  useEffect(()=>{
+
+    setValue(localStorage.getItem("user"))
+  },[])
+
   const [load,setLoad]=useState(true)
 
 const [loading,setLoading]=useState(true)
@@ -401,7 +406,7 @@ return (
          
 
                    { newTodo==="" ||avatarnum===""||avatarnum>9  ? "":
-            <div className="button" style={{padding:'10px',margin:'1em' ,backgroundColor:'white',color:'black',width:'50%',marginLeft:'250px'}}  onClick={addTodo}>
+            <div className="button" style={{padding:'20px',backgroundColor:'white',color:'black',width:'50%',marginLeft:'2em'}}  onClick={addTodo}>
              Post Comment 
              
             </div>
@@ -415,8 +420,8 @@ return (
 
   {todos.length>0?(todos.map((todo)=>{
   return (
-      <div style={{display:'flex',width:'100vw',height:'10em ',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
-      <img src={todo.avatar?todo.avatar:p1} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
+      <div className="todo"style={{display:'flex',width:'100vw',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
+      <img src={todo.avatar} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
         <div style={{paddingLeft:'1rem',width:'100vw'}}>
             <div style={{display:'flex',gap:'1rem',marginBottom:'1px',alignItems:''}}>
                 <p style={{fontWeight:'bold',fontSize:"1.2rem",color:"#008B8B"}}>{todo.author}</p>
@@ -430,7 +435,7 @@ return (
   </div>*/}
    <div className="iconss" style={{display:'flex',width:'100%',flexDirection:'row-reverse',fontSize:'30px',fontWeight:'bold',}}> 
      
-     <div className="X"  stye={{pointer:'cursor'}} onClick={() => deleteTodo(todo._id)}>X</div>
+     <div className="X"   onClick={() => deleteTodo(todo._id)}>X</div>
  </div>
   
         </div>

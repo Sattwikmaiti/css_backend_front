@@ -12,6 +12,9 @@
         margin:6em;
         padding-bottom:2em
     }
+    .todo{
+        height:10em
+    }
     
 
 }
@@ -22,8 +25,16 @@
         padding-bottom:1em;
       
     }
+    .todo{
+        height:auto
+    }
     
 }
 
   /* Tooltip text */
   
+
+
+  .X:hover {
+    cursor:pointer 
+  }
