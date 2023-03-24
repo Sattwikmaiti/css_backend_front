@@ -27,8 +27,7 @@ var Todoschema = new Schema({
     "default": new Date().getTime()
   },
   avatar: {
-    type: String,
-    "default": url
+    type: String
   }
 }); //exporting the model of todo list
 

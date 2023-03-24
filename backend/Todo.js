@@ -35,7 +35,7 @@ timestamp:
 ,
 avatar:{
 type:String,
-default: url
+
 }
 })
 //exporting the model of todo list
