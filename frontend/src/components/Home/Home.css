@@ -37,7 +37,7 @@ body {
 
 
   height:100px;
-width:200px;
+
   transition: .5s ease;
   backface-visibility: hidden;
 
@@ -164,13 +164,6 @@ body {
 }
 
 /* increase header size after 600px */
-@media all and (min-width: 600px) {
-   .blockquote h1 {
-       font-size: 3rem;
-       line-height: 1.2;
-  }
-
-}
 
 
 
@@ -355,23 +348,49 @@ width:250px
 @media screen and (max-width: 1000px){
 
   .motto{
-    margin-left:50em;
+    margin-left:00em;
     width:100vw;
     text-align: center;
 
-    font-size:10px;
+    font-size:2px;
     height:30px;
     
   }
-  
-}
-.services {
 
-  text-align: center;
-  margin: 60px auto;
-  max-width: 800px;
-  height:200px
+  .fac{
+    width:0px
+  }
+  .blockquote-wrapper{
+    margin-top:550px;
+    padding-left:20vw
+   
+  }
+  .con{margin-top:600px;
+
+  }
+  .blockquote{
+    font-size:2px;
+    width:100vw;
+    height:auto
+  }
+  .disp
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
+@media all and (min-width: 1000px) {
+  .blockquote h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+ }
+ .fac{
+   width:200px;
+ }
+
+}
+
 
 
 
@@ -495,9 +514,12 @@ img.prdts:hover
 
 @media only screen and (max-width: 1000px) {
   .container{
-    margin-left: 20em;
-    width :800px;
+    margin-left: 0em;
+    width :100vw
   }
+  
+
+  
 }
 
 
@@ -540,9 +562,7 @@ img.h {
   padding :20px 10px 20px 10px
 
 }
-.services part{
-  left:200px
-}
+
 svg {
 
   position: absolute;
@@ -666,67 +686,125 @@ html {
 .c1 {
   width:25vw
 }
+.grid{
+  flex-direction: row;
+}
+@media   screen and (min-width: 1000px) {
+  .iconss{
+    height:30vh  }
+    .services part{
+      left:200px
+    }
+    .services {
+
+      text-align: center;
+      margin: 60px auto;
+      max-width: 800px;
+      height:200px
+    }
+.grid-2 img{
+  width:50vw
+}
+   
+}
 @media   screen and (max-width: 1000px) {
+
+.services{
+  height:100vh;
+  background-color: #1f2022;
+  width:30vw;
+  margin:0px
+}
+.services part{
+  left:0px
+}
+.lol
+{
+  width:0px
+}
+.facultyn{
+  top:0px;
+  margin:0px
+}.grid-1{
+  padding:0px
+}
   .c1 {
    width: 55vw
   }
    .container1{
 
-    width:50em
+    width:100vw;
+    margin-left:0em
+   }
+   .grid-1{
+    flex-direction:column
    }
 
 .iconss{
-  padding-right:2vw;
+ height:10vh;
+
+
 
 }
+.fac{
+  margin-left:0px;
+  padding-top:20px
+}
+.grid{
+  flex-direction:column;
+  height:auto
+}
+
 .round{
   margin-left:20px
 }
   .body {
-    width: 200vw;
-    height: 100vh;
-    margin-left:20em;
+    width: 100vw;
+    height: 13vh;
+    margin-left:0em;
   }
 
   .div{
-    margin-left:40em;
+    margin-left:0em;
     border-top:2px solid white;
     border-bottom:2px solid white
   }
   .di{
 
-    margin:40px;
+    margin:0px;
     width:500px
   }
   .iconss .git{
     font-size:50px
   }
-  .container1{
-    width:100vw
-  }
+ 
 
-  .wrapp{
-    margin-left:400px
-  }
-  .wrapp h3{
-    padding-left:100px;
-    margin-left:100px
-  }
-  .gapp{
-    padding-left:300px
-  }
+
+
 .c1 .g1{
-  width:600px
+  width:300px;
+  height:auto;
 }
 .c1 .g2{
-  width:600px
+  width:300px;
+  height:auto;
 }
 .c1{
-  width:700px
+  width:300px
+  ;  height:auto;
 }
-.grid-2 img
+.spac{
+  margin-bottom:15em
+}
+.grid-2 img{
+  height:100vh;
+  width:100vw
+  
+  
+}
+.grid
 {
-  margin-left:100px
+  margin-left:0px
 }
 }
 

@@ -83,11 +83,11 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
                
                </center>
                
-         <div className="header" style={{backgroundColor:'#FFDEAD',display:'flex',justifyContent:'center',color:'black',width:'80em'}}>
+         <div className="header" style={{backgroundColor:'#FFDEAD',display:'flex',justifyContent:'center',color:'black',width:'100vw'}}>
            Want To join CSS ! Mail US NOW .
          </div>
-          <div className="emailus" style={{backgroundColor:'#36454F',width:'80rem'}}>
-         <div className="form" style={{marginLeft:'25em'}} >
+          <div className="emailus" style={{backgroundColor:'#36454F',width:'100vw'}}>
+         <div className="form"  >
           <form>
                <div className="input author">
                <input
@@ -120,7 +120,7 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
              </div>
 
 
-             <div className="input msg" style={{marginLeft:'5em'}}>
+             <div className="input msg" >
              <textarea 
     type="text"
     id="message"
@@ -137,7 +137,7 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
   />
                 </div>
 
-                <div className="submit" style={{marginLeft:'7em'}}>
+                <div className="submit" >
                 <button type="submit"  className="btn btn-two" onClick={sendEmail 
 }>Submit</button>
 

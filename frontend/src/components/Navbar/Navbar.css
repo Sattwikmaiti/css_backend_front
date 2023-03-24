@@ -2,7 +2,7 @@
   
   /* The progress container (grey background) */
   .progress-container {
-    width: 100%;
+    width: 100vw;
     height: 10px;
     background:  cadetblue;
     position: fixed;
@@ -47,4 +47,15 @@ border-bottom:3px solid burlywood
   .nav li{
     font-size: 20px;
     font-weight:bold
+  }
+
+  @media  screen and (max-width:1000px)
+  { 
+    nav {
+      width:100vw ;
+      height:auto;
+
+    }
+
+     
   }

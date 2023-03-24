@@ -178,13 +178,13 @@ const Home = () => {
       <div className="wrapp">
  
   <center>
-    <div className="grid" style={{display:'flex',justifyContent:'space-between',flexDirection:'row'}}>
+    <div className="grid" style={{display:'flex',justifyContent:'space-between'}}>
           <div className="container1">
                   <div >
                     <center>
 
                    
-                    <div className="iconss" style={{height:'30vh',backgroundColor:'grey',paddingRight:'10vw'}}>
+                    <div className="iconss" style={{backgroundColor:'grey',paddingRight:'10vw'}}>
                      <GitHubIcon  className="git floating"style={{alignSelf:'center',justifyContent:'center'}} />
                     </div>
                      <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
@@ -202,7 +202,7 @@ const Home = () => {
                     <center>
 
                    
-                    <div className="iconss " style={{height:'30vh',backgroundColor:'grey' ,paddingRight:'10vw'}}>
+                    <div className="iconss " style={{backgroundColor:'grey' ,paddingRight:'10vw'}}>
                      <GitHubIcon className="git floating" style={{alignSelf:'center',justifyContent:'center'}} />
                     </div>
                      <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
@@ -221,7 +221,7 @@ const Home = () => {
                     <center>
 
                    
-                    <div className="iconss" style={{height:'30vh',backgroundColor:'grey',paddingRight:'10vw'}}>
+                    <div className="iconss" style={{backgroundColor:'grey',paddingRight:'10vw'}}>
                      <GitHubIcon  className="git floating" style={{alignSelf:'center',justifyContent:'center',marginRight:'10vw'}} />
                     </div>
                      <div className="legend"   style={{borderTop:'2px solid white',borderBottom:'2px solid white',height:'10%',fontWeight:'bold'}}>
@@ -242,26 +242,26 @@ const Home = () => {
       <div className="container reveal services part" >
         <div
           className="lol"
-          style={{ fontSize: "20px", fontWeight: "bolder", color: "white" , backgroundColor:'black',height:'160px',width:'160px',borderRadius:'20px'}}
+          style={{ fontSize: "20px", fontWeight: "bolder", color: "white" , backgroundColor:'#2F4F4F',height:'160px',borderRadius:'20px'}}
         > 
-        <div style={{display:'flex',justifyContent:'center',top:'20px',margin:'30px',borderRadius:'20px'}}>
+        <div className="facultyn" style={{display:'flex',justifyContent:'center',top:'20px',margin:'30px',borderRadius:'20px'}}>
         OUR &nbsp;FACULTY &nbsp; ADVISOR
         </div>
          
         </div>
         
-<div className="container reveal floating" style={{padding:'0px',marginLeft:'130px',height:'600px',width:'500px'}}> 
+<div className="container reveal floating fac" style={{padding:'0px',height:'600px',width:'500px'}}> 
 
-    <div className="grid-1" style={{display:'flex',flexDirection:'row',padding:'10px'}}>
+    <div className="grid-1" style={{display:'flex',padding:'10px'}}>
 
-      <div className="obj1" style={{margin:'10px'}}>
+      <div className="obj1" >
       <center>
   <img src={sub} alt="Avatar" className="image"/>
   <div className="middle">
     <div className ="text">Subrata Nandi</div>
   </div></center>
       </div>
-      <div className="obj1"  style={{margin:'10px'}}>
+      <div className="obj1"  >
       <center>
   <img src={sub} alt="Avatar" className="image"/>
   <div className="middle">
@@ -269,7 +269,7 @@ const Home = () => {
   </div></center>
       </div>
     </div>
-    <div className="grid-1" style={{display:'flex',flexDirection:'row',}}>
+    <div className="grid-1" style={{display:'flex',}}>
 
 <div className="obj1"  >
 <center>
@@ -296,8 +296,7 @@ const Home = () => {
     
       </div>  
       <div className="space" style={{padding:'100px'}}></div>
-      
-   
+     
       <div className="reveal  container gapp" style={{display:'flex',flexDirection:'row',height:'300px',width:'auto',marginTop:'200px',marginBottom:'50px',fontFamily: 'Lora, serif',marginLeft:'auto'}}>
       <div class="blockquote-wrapper">
   <div class="blockquote">
@@ -309,11 +308,11 @@ const Home = () => {
   </div>
 </div>
       </div>
-      <div className="  motto " style={{height:'auto',width:'100vw'}}>
+      <div className="  motto con " style={{height:'auto',width:'100vw'}}>
         <h2 style={{fontSize:'50px',borderTop:'2px solid white',borderBottom:'2px solid white'}}>CONTACT US </h2></div>
 
   
-      <div className="reveal  container"  style={{height:'80vh',display:'flex'}}>
+      <div className="reveal  container disp"  style={{height:'80vh',display:'flex'}}>
         <div className="grid" >
         <div className="c1" style={{backgroundColor:'#F0F8FF',height:'80px',color:'black',fontWeight:'bold'}}>
            <div className="g1" style={{fontSize:'20px',paddingLeft:'5px'}}>
@@ -350,11 +349,13 @@ const Home = () => {
           </div> 
         </div>
          <div className="grid-2">
-          <img src={p}  style={{height:'70vh',marginLeft:'10px',width:'50vw'}}/>
+          <img src={p}  style={{height:'70vh',marginLeft:'10px'}}/>
 
          </div>
-      </div>
      
+      </div>
+      <div className="spac" ></div>
+       
  
     </>
   );

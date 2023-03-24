@@ -40,13 +40,13 @@
 input[type=text] {
   padding:10px;
   
-   width: 30rem;
+   width: 20rem;
    background-color: lightcyan;
    color: black;
 }  input[type=email] {
   padding:10px;
   
-  width: 30em;
+  width: 20em;
   background-color: lightcyan;
   color: black;
 
@@ -95,17 +95,29 @@ textarea {
   background-image: url("../Home/p3.png");
 
 }
-.bodyy{
-  backdrop-filter: blur(80px);
 
+@media only screen and (max-width: 1000px) {
+  /* If screen is small, apply the following styles */
+  .submit{
+    margin-left: 1.4em
+  }
+  .msg{
+    margin-left:1em
+  }
 }
 
-
-
-
-@media screen  and (max-width:1000){
-   .header{
-      background-color: rgb(46, 106, 158);
+@media only screen and (min-width: 1000px) {
+  /* If screen is not small, apply the following styles */
+  .submit{
+    margin-left: 25em;
   }
-  
+  .email{
+    margin-left:25em
+  }
+  .author{
+    margin-left:25em
+  }
+  .msg{
+    margin-left:25em
+  }
 }

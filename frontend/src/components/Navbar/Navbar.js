@@ -40,7 +40,7 @@ fontFamily: 'Lora, serif'
     </h></span>
   
   </div>
-  <div className="1">
+  <div className="media">
   <ul className="nav">
     <li onClick={()=>navigate('/Alumini')}>Alumini</li>
 
