@@ -119,7 +119,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-   background-color: black !important;
+   background-color: #282828 !important;
    color:whitesmoke
 }
 /* Blockquote header */
@@ -301,7 +301,9 @@ width:250px
 
 
 
-
+.input{
+  margin-bottom:1em
+}
 
 
 .reveal{
