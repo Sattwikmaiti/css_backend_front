@@ -4,13 +4,10 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between ;
-    background-color: aliceblue;
+color: aliceblue;
     
 }
-.p1 .p2 .p3 .p4 .p5
-{
-  color: aliceblue;
-}
+
 
 
 
@@ -99,25 +96,27 @@ textarea {
 @media only screen and (max-width: 1000px) {
   /* If screen is small, apply the following styles */
   .submit{
-    margin-left: 1.4em
+    margin-left: 1.3em
   }
-  .msg{
-    margin-left:1em
+
+  .op1{
+   
+    padding-right:.4em
   }
 }
 
 @media only screen and (min-width: 1000px) {
   /* If screen is not small, apply the following styles */
   .submit{
-    margin-left: 25em;
+    margin-left: 30em;
   }
   .email{
-    margin-left:25em
+    margin-left:28em
   }
   .author{
-    margin-left:25em
+    margin-left:28em
   }
   .msg{
-    margin-left:25em
+    margin-left:28em
   }
 }

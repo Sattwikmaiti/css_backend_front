@@ -31,15 +31,15 @@ const Events = () => {
         <div className="top-section">
           <h1>
             <center style={{ color: "white", backgroundColor: "black" }}>
-            <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'0vw'}}><h1>TIMELINE</h1> </center>
+            <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',}}><h1>TIMELINE</h1> </center>
             </center>
           </h1>
         </div>
-        <Timeline position="alternate">
-        <TimelineItem className="conta ">
+        <Timeline >
+        <TimelineItem className="conta  reveal">
         <TimelineSeparator sx={{color:'black'}}>
           <img src={p1} style={{}} />
-          <TimelineConnector />
+          <TimelineConnector className="connect"/>
         </TimelineSeparator>
         <TimelineContent>          <div className="section">
             <div className="bead"></div>
@@ -55,10 +55,10 @@ const Events = () => {
             </div>
           </div></TimelineContent>
       </TimelineItem>
-      <TimelineItem className=" conta reveal">
-        <TimelineSeparator>
+      <TimelineItem className="conta reveal">
+        <TimelineSeparator sx={{color:'black'}}>
           <img src={p1} style={{}} />
-          <TimelineConnector />
+          <TimelineConnector className="connect"/>
         </TimelineSeparator>
         <TimelineContent>          <div className="section">
             <div className="bead"></div>
@@ -74,10 +74,10 @@ const Events = () => {
             </div>
           </div></TimelineContent>
       </TimelineItem>
-      <TimelineItem className="conta  reveal">
-        <TimelineSeparator>
+      <TimelineItem className="conta reveal ">
+        <TimelineSeparator sx={{color:'black'}}>
           <img src={p1} style={{}} />
-          <TimelineConnector />
+          <TimelineConnector className="connect"/>
         </TimelineSeparator>
         <TimelineContent>          <div className="section">
             <div className="bead"></div>
@@ -93,64 +93,10 @@ const Events = () => {
             </div>
           </div></TimelineContent>
       </TimelineItem>
-      <TimelineItem  className=" conta reveal">
-        <TimelineSeparator>
-        <img src={p1} style={{}} />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>          <div className="section">
-            <div className="bead"></div>
-            <div className="content ">
-              <h2>Inaguration</h2>
-              <p>
-                <h4 style={{fontWeight:'bold'}}>Date : 0 2 / 1 2 / 2 3 </h4>
-                 <br/>
-                 Huge participation of students in the society . The faculty members had also come to the inaguration.The song chorus was sung and wveryone was dancing .
-
- 
-              </p>
-            </div>
-          </div></TimelineContent>
-      </TimelineItem>
-      <TimelineItem className=" conta reveal">
-        <TimelineSeparator>
-        <img src={p1} style={{}} />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>          <div className="section">
-            <div className="bead"></div>
-            <div className="content ">
-              <h2>Inaguration</h2>
-              <p>
-                <h4 style={{fontWeight:'bold'}}>Date : 0 2 / 1 2 / 2 3 </h4>
-                 <br/>
-                 Huge participation of students in the society . The faculty members had also come to the inaguration.The song chorus was sung and wveryone was dancing .
-
- 
-              </p>
-            </div>
-          </div></TimelineContent>
-      </TimelineItem>
-      <TimelineItem className="conta  reveal">
-        <TimelineSeparator>
-        <img src={p1} style={{}} />
-        </TimelineSeparator>
-        <TimelineContent>          <div className="section">
-            <div className="bead"></div>
-            <div className="content ">
-              <h2>Inaguration</h2>
-              <p>
-                <h4 style={{fontWeight:'bold'}}>Date : 0 2 / 1 2 / 2 3 </h4>
-                 <br/>
-                 Huge participation of students in the society . The faculty members had also come to the inaguration.The song chorus was sung and wveryone was dancing .
-
- 
-              </p>
-            </div>
-          </div></TimelineContent>
-      </TimelineItem>
-       
       
+     
+       
+    
     </Timeline>
       </div>
     </div>

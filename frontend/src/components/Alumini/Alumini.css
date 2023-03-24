@@ -132,8 +132,19 @@
 }
 
 @media screen and (max-width:1000px) {
-  .wrapper {
-    margin-left:100px
+  .box{
+    width:100vw
+  }
+  .col{
+    width:80vw
+
+  }
+  #login-container{
+    width:80vw;
+    height:auto !important
+  }
+  .name{
+    width:50vw
   }
   
 }

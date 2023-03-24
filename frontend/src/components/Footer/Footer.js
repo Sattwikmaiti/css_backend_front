@@ -67,16 +67,16 @@ emailjs.send( 'service_mw422g6', 'template_thnxeur', {
               <div className="p1">
              <a href="https://mui.com/material-ui/icons/"><GoogleIcon className="opl" sx={{ fontSize: 40 ,color:'white'}} /></a>
              </div>
-             <div className="p2">
+             <div className="p1">
              <TwitterIcon className="opl" sx={{ fontSize: 40 ,color:'white'}}/>
              </div>
-             <div className="p3">
+             <div className="p1">
              <GitHubIcon className="opl" sx={{ fontSize: 40 ,color:'white'}}/>
              </div>
-             <div className="p4">
+             <div className="p1">
              <LinkedInIcon className="opl" sx={{ fontSize: 40 ,color:'white'}}/>
              </div>
-             <div className="p5">
+             <div className="p1">
              <FacebookIcon className="opl" sx={{ fontSize: 40 ,color:'white'}}/>
              </div>
                </div>

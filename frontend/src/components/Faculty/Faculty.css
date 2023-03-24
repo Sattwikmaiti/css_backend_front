@@ -1,0 +1,8 @@
+@media screen and (max-width:1000px){
+    .container video{
+        height:auto;
+        width:100vw;
+        margin-top:4em
+    }
+    
+}

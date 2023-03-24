@@ -270,7 +270,7 @@ return (
 <div  onClick={handleClick}>
 
  
-    <center  className="cent" style={{backgroundColor:'black',opacity:'1',height:'100vh',width:'100vw'}}>
+    <center  className="cent" >
         
          
 

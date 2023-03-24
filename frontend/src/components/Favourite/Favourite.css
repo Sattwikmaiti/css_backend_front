@@ -7,7 +7,23 @@
     font-size:10px
 }
 
+@media screen and (min-width:1000px) {
+    .cent{
+        margin:6em;
+        padding-bottom:2em
+    }
+    
 
-  
+}
+
+  @media screen and (max-width:1000px) {
+    .cent{
+        margin:10em;
+        padding-bottom:1em;
+      
+    }
+    
+}
+
   /* Tooltip text */
   

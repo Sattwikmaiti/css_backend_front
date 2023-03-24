@@ -16,7 +16,7 @@ const Alumini = () => {
 
 
   return (
-    <div className="wrapper" style={{width:'100vw'}}>
+    <div className="wrapper" style={{width:'100vw',paddingTop:'5em'}}>
     <div className="containerr" style={{backgroundColor:'black'}}>
       <center style={{borderTop:'2px solid white',borderBottom:'2px solid white',width:'50vw',marginLeft:'20vw'}}><h1>OUR ALUMINI</h1> </center>
       <div className="box">
@@ -27,7 +27,7 @@ const Alumini = () => {
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
 
-    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',color:'white',}}>
    Himanshu Khaitan
   </div>
   </center>
@@ -58,7 +58,7 @@ const Alumini = () => {
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
 
-    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',color:'white',}}>
    Himanshu Khaitan
   </div>
   </center>
@@ -89,7 +89,7 @@ const Alumini = () => {
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
 
-    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',color:'white',}}>
    Himanshu Khaitan
   </div>
   </center>
@@ -120,7 +120,7 @@ const Alumini = () => {
     <img src={p1} style={{height :'100px',width:'100px',borderRadius:'50px'}} />
   </div>
 
-    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',width:'410px',color:'white',boxShadow:'10px 10px 10px 10px rgba(0,0,0,0.5)'}}>
+    <center> <div className="name" style={{fontSize:'larger',padding:'20px',fontWeight:'bold',color:'white',}}>
    Himanshu Khaitan
   </div>
   </center>

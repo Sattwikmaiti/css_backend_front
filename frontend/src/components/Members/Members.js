@@ -34,7 +34,7 @@ const Members = () => {
     <>
    
    
-    <div className="wrapper">
+    <div className="wrapper" style={{paddingTop:'5em'}}>
  
 
     <div className="container" style={{padding:'30px',width:'80vw'}}>
