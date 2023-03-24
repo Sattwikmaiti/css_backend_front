@@ -396,12 +396,12 @@ return (
             <input    onChange={(e) => {setAvatarNum(e.target.value); }}
               value={avatarnum}
             
-            placeholder="A number between 0 to 9 for magic avatar...." type="number" id="quantity" name="quantity" min="0" max="9" style={{fontSize:'larger',fontWeight:'bolder',padding:'10px',width:'30vw',margin:'10px'}}/>
+            placeholder="0 - 9 for magic avatar" type="number" id="quantity" name="quantity" min="0" max="9" style={{fontSize:'larger',fontWeight:'bolder',padding:'10px',width:'60vw',margin:'10px',height:'auto'}}/>
             </div>
          
 
                    { newTodo==="" ||avatarnum===""||avatarnum>9  ? "":
-            <div className="button" style={{padding:'10px',margin:'10px' ,backgroundColor:'white',color:'black',width:'50%',marginLeft:'250px'}}  onClick={addTodo}>
+            <div className="button" style={{padding:'10px',margin:'1em' ,backgroundColor:'white',color:'black',width:'50%',marginLeft:'250px'}}  onClick={addTodo}>
              Post Comment 
              
             </div>
@@ -415,22 +415,22 @@ return (
 
   {todos.length>0?(todos.map((todo)=>{
   return (
-      <div style={{display:'flex',width:'100%',height:'auto ',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
+      <div style={{display:'flex',width:'100vw',height:'10em ',backgroundColor:'white',padding:'1rem',borderBottom:'1px solid black',borderRadius:'2px',color:"black"}}>
       <img src={todo.avatar?todo.avatar:p1} alt="no Image" style = {{width:'60px',height:'60px',borderRadius:'1000rem'}}  onClick={() => {  setDate(todo._id);console.log(todo._id);}}data-toggle="modal" data-target="#exampleModal"/>
-        <div style={{paddingLeft:'1rem',width:'100%'}}>
+        <div style={{paddingLeft:'1rem',width:'100vw'}}>
             <div style={{display:'flex',gap:'1rem',marginBottom:'1px',alignItems:''}}>
                 <p style={{fontWeight:'bold',fontSize:"1.2rem",color:"#008B8B"}}>{todo.author}</p>
                 <p style={{color:'gray',fontWeight:'bold'}}>posted at {new Date(parseInt(todo.timestamp)).toLocaleString()}</p>
              
             </div>
-            <p style={{color:"gray" ,display:'flex',width:'80vw'}} >{todo.text}</p>
+            <p style={{color:"gray" ,display:'flex',width:'70vw'}} >{todo.text}</p>
             {/*<div style={{display:'flex',width:'90%',marginTop:'1.6rem',flexDirection:'row-reverse',gap:'1rem',fontSize:'small'}}>
                 <PencilSquare  style={{fontSize:'small'}}/>
                 <Trash style={{fontSize:'10px'}} />
   </div>*/}
    <div className="iconss" style={{display:'flex',width:'100%',flexDirection:'row-reverse',fontSize:'30px',fontWeight:'bold',}}> 
      
-     <div className="X"  style={{backgroundColor:'white',borderRadius:'40px',height:'40px',width:'40px'}}  onClick={() => deleteTodo(todo._id)}>X</div>
+     <div className="X"  stye={{pointer:'cursor'}} onClick={() => deleteTodo(todo._id)}>X</div>
  </div>
   
         </div>
